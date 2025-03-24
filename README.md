@@ -1,4 +1,4 @@
-# Project Title
+# Ai Practice
 
 
 ## License
