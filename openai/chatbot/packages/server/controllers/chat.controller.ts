@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
 import z from 'zod';
 
-import chatService from '../service/chat.service';
+import chatService from '../services/chat.service';
 
 const chatSchema = z.object({
     prompt: z.string()
