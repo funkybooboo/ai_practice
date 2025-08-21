@@ -10,4 +10,3 @@ const completion = await client.chat.completions.create({
 });
 
 console.log(completion.choices[0].message.content);
-
