@@ -6,5 +6,5 @@ export default {
     },
     setLastResponseId(conversationId: string, lastResponseId: string) {
         conversations.set(conversationId, lastResponseId);
-    }
+    },
 };
