@@ -2,7 +2,7 @@ import { FaArrowUp } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import ReactMarkDown from 'react-markdown';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Button } from './ui/button';
 import axios from 'axios';
@@ -22,11 +22,18 @@ type Message = {
 
 const ChatBot = () => {
     const [messages, setMessages] = useState<Message[]>([]);
+    const [isBotTyping, setIsBotTyping] = useState(false);
+    const formRef = useRef<HTMLFormElement | null>(null);
     const conversationId = useRef(crypto.randomUUID());
     const { register, handleSubmit, reset, formState } = useForm<FormData>();
 
+    useEffect(() => {
+        formRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, [messages]);
+
     const onSubmit = async ({ prompt }: FormData) => {
         setMessages(prev => [...prev, { content: prompt, role: 'user' }]);
+        setIsBotTyping(true);
 
         reset();
 
@@ -45,6 +52,7 @@ const ChatBot = () => {
             );
 
             setMessages(prev => [...prev, { content: data.message, role: 'bot' }]);
+            setIsBotTyping(false);
         } catch (error) {
             console.log(error);
         }
@@ -77,11 +85,19 @@ const ChatBot = () => {
                         </ReactMarkDown>
                     </p>
                 ))}
+                {isBotTyping && (
+                    <div className='flex self-start gap-1 px-3 py-3 bg-gray-200 rounded-xl'>
+                        <div className='w-2 h-2 rounded-full bg-gray-800 animate-pulse' />
+                        <div className='w-2 h-2 rounded-full bg-gray-800 animate-pulse [animation-delay:0.2s]' />
+                        <div className='w-2 h-2 rounded-full bg-gray-800 animate-pulse [animation-delay:0.4s]' />
+                    </div>
+                )}
             </div>
 
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 onKeyDown={onKeyDown}
+                ref={formRef}
                 className="flex flex-col gap-2 items-end border-2 p-4 rounded-3xl"
             >
                 <textarea
