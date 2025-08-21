@@ -1,5 +1,5 @@
 {
-    "name": "hello-ai",
+    "name": "chatbot",
     "module": "index.ts",
     "type": "module",
     "private": true,
