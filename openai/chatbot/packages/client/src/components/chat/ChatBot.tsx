@@ -1,11 +1,13 @@
 import { FaArrowUp } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import ReactMarkDown from 'react-markdown';
+import axios from 'axios';
 
 import { useEffect, useRef, useState } from 'react';
 
-import { Button } from './ui/button';
-import axios from 'axios';
+import { Button } from '../ui/button';
+
+import TypingIndicator from './TypingIndicator';
 
 type FormData = {
     prompt: string;
@@ -100,11 +102,7 @@ const ChatBot = () => {
                     </div>
                 ))}
                 {isBotTyping && (
-                    <div className='flex self-start gap-1 px-3 py-3 bg-gray-200 rounded-xl'>
-                        <div className='w-2 h-2 rounded-full bg-gray-800 animate-pulse' />
-                        <div className='w-2 h-2 rounded-full bg-gray-800 animate-pulse [animation-delay:0.2s]' />
-                        <div className='w-2 h-2 rounded-full bg-gray-800 animate-pulse [animation-delay:0.4s]' />
-                    </div>
+                    <TypingIndicator />
                 )}
                 {error && <p className='text-red-500'>{error}</p>}
             </div>
