@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import ReactMarkDown from 'react-markdown';
 
+import TypingIndicator from './TypingIndicator';
+
 export type Message = {
     content: string;
     role: 'user' | 'bot';
@@ -8,9 +10,11 @@ export type Message = {
 
 type Props = {
     messages: Message[];
+    error: string;
+    isBotTyping: boolean;
 };
 
-const ChatMessages = ({ messages }: Props) => {
+const ChatMessages = ({ messages, error, isBotTyping }: Props) => {
     const lastMessageRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -26,24 +30,32 @@ const ChatMessages = ({ messages }: Props) => {
     };
 
     return (
-        <div className="flex flex-col gap-3">
-            {messages.map((message, index) => (
-                <div
-                    key={index}
-                    onCopy={onCopyMessage}
-                    ref={index === messages.length - 1 ? lastMessageRef : null}
-                    className={`
-                    px-3 py-1 rounded-xl
-                    ${
-                        message.role === 'user'
-                            ? 'bg-blue-600 text-white self-end'
-                            : 'bg-gray-100 text-black self-start'
-                    }
-                `}
-                >
-                    <ReactMarkDown>{message.content}</ReactMarkDown>
-                </div>
-            ))}
+        <div className="flex flex-col flex-1 gap-3 mb-10 overflow-y-auto">
+            <div className="flex flex-col gap-3">
+                {messages.map((message, index) => (
+                    <div
+                        key={index}
+                        onCopy={onCopyMessage}
+                        ref={
+                            index === messages.length - 1
+                                ? lastMessageRef
+                                : null
+                        }
+                        className={`
+                        px-3 py-1 rounded-xl
+                        ${
+                            message.role === 'user'
+                                ? 'bg-blue-600 text-white self-end'
+                                : 'bg-gray-100 text-black self-start'
+                        }
+                    `}
+                    >
+                        <ReactMarkDown>{message.content}</ReactMarkDown>
+                    </div>
+                ))}
+            </div>
+            {isBotTyping && <TypingIndicator />}
+            {error && <p className="text-red-500">{error}</p>}
         </div>
     );
 };
