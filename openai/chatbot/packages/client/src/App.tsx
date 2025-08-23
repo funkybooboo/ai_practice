@@ -27,7 +27,11 @@ function App() {
                 </Button>
             </div>
             <div className="flex-1 p-4 overflow-auto">
-                {activeTab === 'chat' ? <ChatBot /> : <ReviewList productId={1} />}
+                {activeTab === 'chat' ? (
+                    <ChatBot />
+                ) : (
+                    <ReviewList productId={1} />
+                )}
             </div>
         </div>
     );
