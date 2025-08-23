@@ -5,9 +5,14 @@ import { Button } from './components/ui/button';
 
 function App() {
     const [activeTab, setActiveTab] = useState('chat');
+    const [productId, setProductId] = useState(1);
 
     const handleTabChange = (tab: string) => {
         setActiveTab(tab);
+    };
+
+    const handleProductIdChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setProductId(Number(event.target.value));
     };
 
     return (
@@ -30,7 +35,16 @@ function App() {
                 {activeTab === 'chat' ? (
                     <ChatBot />
                 ) : (
-                    <ReviewList productId={4} />
+                    <div>
+                        Review <input
+                            type="number"
+                            value={productId}
+                            onChange={handleProductIdChange}
+                            placeholder="Enter Product ID"
+                            className="p-2 border border-gray-300 rounded mb-4"
+                        />
+                        <ReviewList productId={productId} />
+                    </div>
                 )}
             </div>
         </div>
