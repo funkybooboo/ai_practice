@@ -12,7 +12,7 @@ type Props = {
 
 const ReviewList = ({ productId }: Props) => {
     const summaryMutation = useMutation<GetSummaryResponse>({
-        mutationFn: () => reviewsApi.summerizeReviews(productId),
+        mutationFn: () => reviewsApi.summarizeReviews(productId),
     });
 
     const reviewsQuery = useQuery<GetReviewsResponse>({

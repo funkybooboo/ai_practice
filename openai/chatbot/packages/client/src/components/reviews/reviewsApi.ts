@@ -19,7 +19,7 @@ export type GetSummaryResponse = {
 };
 
 export default {
-    async summerizeReviews(productId: number): Promise<GetSummaryResponse> {
+    async summarizeReviews(productId: number): Promise<GetSummaryResponse> {
         const { data } = await axios.post<GetSummaryResponse>(
             `/api/products/${productId}/reviews/summarize`
         );
