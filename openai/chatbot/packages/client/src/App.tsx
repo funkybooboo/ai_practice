@@ -11,7 +11,9 @@ function App() {
         setActiveTab(tab);
     };
 
-    const handleProductIdChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleProductIdChange = (
+        event: React.ChangeEvent<HTMLInputElement>
+    ) => {
         setProductId(Number(event.target.value));
     };
 
@@ -36,7 +38,8 @@ function App() {
                     <ChatBot />
                 ) : (
                     <div>
-                        Review <input
+                        Review{' '}
+                        <input
                             type="number"
                             value={productId}
                             onChange={handleProductIdChange}
