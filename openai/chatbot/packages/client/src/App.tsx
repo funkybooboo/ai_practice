@@ -30,7 +30,7 @@ function App() {
                 {activeTab === 'chat' ? (
                     <ChatBot />
                 ) : (
-                    <ReviewList productId={1} />
+                    <ReviewList productId={4} />
                 )}
             </div>
         </div>

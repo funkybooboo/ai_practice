@@ -1,7 +1,10 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
 import StarRating, { type Rating } from './StarRating';
 import Skeleton from 'react-loading-skeleton';
+import { useQuery } from '@tanstack/react-query';
+import { Button } from '../ui/button';
+import { HiSparkles } from "react-icons/hi";
+import { useState } from 'react';
 
 type Props = {
     productId: number;
@@ -20,22 +23,27 @@ type GetReviewsResponse = {
     reviews: Review[];
 };
 
+type GetSummaryResponse = {
+    summary: string;
+};
+
 const ReviewList = ({ productId }: Props) => {
-    const [reviewData, setReviewData] = useState<GetReviewsResponse>();
-    const [isLoading, setIsLoading] = useState(false);
+    const [summary, setSummary] = useState('');
 
-    const fetchReviews = async () => {
-        setIsLoading(true);
-        const { data } = await axios.get<GetReviewsResponse>(
-            `/api/products/${productId}/reviews`
-        );
-        setReviewData(data);
-        setIsLoading(false);
+    const { data: reviewData, isLoading, error } = useQuery<GetReviewsResponse>({
+        queryKey: ['reviews', productId],
+        queryFn: async () => {
+            const { data } = await axios.get<GetReviewsResponse>(
+                `/api/products/${productId}/reviews`
+            );
+            return data;
+        },
+    });
+
+    const handleSummarize = async () => {
+        const { data } = await axios.post<GetSummaryResponse>(`/api/products/${productId}/reviews/summarize`);
+        setSummary(data.summary);
     };
-
-    useEffect(() => {
-        fetchReviews();
-    }, []);
 
     if (isLoading) {
         return (
@@ -51,16 +59,37 @@ const ReviewList = ({ productId }: Props) => {
         );
     }
 
+    if (error) {
+        return <p className='text-red-500'>Could not get reviews. Try again!</p>
+    }
+
+    if (!reviewData?.reviews.length) {
+        return null;
+    }
+
+    const currentSummary: string = reviewData.summary || summary;
+
     return (
-        <div className="flex flex-col gap-5">
-            {reviewData?.reviews.map((review) => (
-                <div key={review.id}>
-                    <div className="font-semibold">{review.author}</div>
-                    <div><StarRating value={review.rating}/></div>
-                    <p className="py-2">{review.content}</p>
-                </div>
-            ))}
+        <div>
+            <div className='mb-5'>
+                {currentSummary ? (
+                    <p>{currentSummary}</p>
+                ) : (
+                    <Button onClick={handleSummarize}><HiSparkles />Summarize</Button>
+                )}
+            </div>
+
+            <div className="flex flex-col gap-5">
+                {reviewData?.reviews.map((review) => (
+                    <div key={review.id}>
+                        <div className="font-semibold">{review.author}</div>
+                        <div><StarRating value={review.rating}/></div>
+                        <p className="py-2">{review.content}</p>
+                    </div>
+                ))}
+            </div>
         </div>
+        
     );
 };
 
