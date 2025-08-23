@@ -14,13 +14,13 @@ function App() {
         <div className="h-screen flex flex-col">
             <div className="flex space-x-4 p-4 bg-gray-100 shadow-md">
                 <Button
-                    className={`px-4 py-2 rounded-lg ${activeTab === 'chat' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                    className={`px-4 py-2 cursor-pointer ${activeTab === 'chat' ? 'bg-black' : 'bg-gray-500'}`}
                     onClick={() => handleTabChange('chat')}
                 >
                     Chat
                 </Button>
                 <Button
-                    className={`px-4 py-2 rounded-lg ${activeTab === 'reviews' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                    className={`px-4 py-2 cursor-pointer ${activeTab === 'reviews' ? 'bg-black' : 'bg-gray-500'}`}
                     onClick={() => handleTabChange('reviews')}
                 >
                     Reviews
