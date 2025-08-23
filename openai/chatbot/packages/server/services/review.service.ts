@@ -14,11 +14,13 @@ export default {
 
         const prompt = template.replace('{{reivews}}', joinedReivews);
 
-        const { text } = await llmClient.generateText({
+        const { text: summary } = await llmClient.generateText({
             prompt,
             maxTokens: 500,
         });
 
-        return text;
+        await reviewRepository.storeReviewSummary(productId, summary);
+
+        return summary;
     },
 };

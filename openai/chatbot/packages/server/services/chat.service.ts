@@ -15,7 +15,7 @@ export default {
         prompt: string,
         conversationId: string
     ): Promise<ChatResponse> {
-        const { text, id } = await llmClient.generateText({
+        const { text: message, id } = await llmClient.generateText({
             model: 'gpt-4o-mini',
             instructions,
             prompt,
@@ -29,7 +29,7 @@ export default {
 
         return {
             id: id,
-            message: text,
+            message,
         };
     },
 };

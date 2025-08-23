@@ -23,8 +23,6 @@ export default {
 
         const summary = await reviewService.summarizeReviews(productId);
 
-        // TODO save summary to db
-
         res.json({ summary });
     },
 };
