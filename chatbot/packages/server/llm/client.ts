@@ -1,12 +1,14 @@
 import OpenAI from 'openai';
 import { InferenceClient } from "@huggingface/inference";
+import { Ollama } from 'ollama';
 
 const defaultModel = process.env.CHATBOT_MODEL;
 
-const inferenceClient = new InferenceClient(process.env.CHATBOT_HF_TOKEN);
 const openaiClient = new OpenAI({
     apiKey: process.env.CHATBOT_OPENAI_API_KEY,
 });
+const inferenceClient = new InferenceClient(process.env.CHATBOT_HF_TOKEN);
+const ollamaClient = new Ollama();
 
 type GenerateTextOptions = {
     model?: string;
@@ -28,7 +30,7 @@ const openaiGenerateText: GenerateTextFunction = async (options: GenerateTextOpt
     try {
         const response = await openaiClient.responses.create({
             model: options.model,
-            instructions: options.instructions,
+            instructions: options.instructions || '',
             input: options.prompt,
             temperature: options.temperature,
             max_output_tokens: options.maxTokens,
@@ -42,7 +44,7 @@ const openaiGenerateText: GenerateTextFunction = async (options: GenerateTextOpt
     }
 };
 
-const metaLlamaGenerateText: GenerateTextFunction = async (options: GenerateTextOptions) => {
+const inferenceGenerateText: GenerateTextFunction = async (options: GenerateTextOptions) => {
     try {
         const chatCompletion = await inferenceClient.chatCompletion({
             provider: "fireworks-ai",
@@ -50,16 +52,13 @@ const metaLlamaGenerateText: GenerateTextFunction = async (options: GenerateText
             messages: [
                 {
                     role: 'system',
-                    content: options.instructions,
+                    content: options.instructions || '',
                 },
                 {
                     role: "user",
                     content: options.prompt,
                 },
             ],
-            max_tokens: options.maxTokens,
-            temperature: options.temperature,
-            previous_response_id: options.previousResponseId,
         });
 
         if (chatCompletion.choices.length === 0) {
@@ -75,6 +74,24 @@ const metaLlamaGenerateText: GenerateTextFunction = async (options: GenerateText
         console.error("Error generating text with Meta Llama:", error);
         throw error;
     }
+};
+
+const ollamaGenerateText: GenerateTextFunction = async (options: GenerateTextOptions) => {
+    const response = await ollamaClient.chat({
+        model: 'tinyllama',
+        messages: [
+            {
+                role: 'system',
+                content: options.instructions || '',
+            },
+            {
+                role: "user",
+                content: options.prompt,
+            },
+        ],
+    });
+
+    return { text: response.message.content, id: crypto.randomUUID() };
 };
 
 export default {
@@ -95,7 +112,9 @@ export default {
         options.prompt = modifiedPrompt;
 
         if (options.model === 'meta-llama/Llama-3.1-8B-Instruct') {
-            return metaLlamaGenerateText(options);
+            return inferenceGenerateText(options);
+        } else if (options.model === 'tinyllama') {
+            return ollamaGenerateText(options);
         } else {
             return openaiGenerateText(options);
         }
