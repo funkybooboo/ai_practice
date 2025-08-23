@@ -9,7 +9,8 @@ export default {
     },
 
     async summarizeReviews(productId: number): Promise<string> {
-        const existingSummary = await reviewRepository.getReviewSummary(productId);
+        const existingSummary =
+            await reviewRepository.getReviewSummary(productId);
         if (existingSummary) {
             return existingSummary;
         }
@@ -31,5 +32,5 @@ export default {
 
     async getReviewSummary(productId: number) {
         return reviewRepository.getReviewSummary(productId);
-    }
+    },
 };

@@ -19,26 +19,23 @@ export default {
             content: summary,
             expiresAt,
             generatedAt: now,
-            productId
+            productId,
         };
 
         return prisma.summary.upsert({
             where: { productId },
             create: data,
-            update: data
+            update: data,
         });
     },
 
     async getReviewSummary(productId: number): Promise<string | null> {
         const summary = await prisma.summary.findFirst({
-            where: { 
-                AND: [
-                    { productId },
-                    { expiresAt: { gt: new Date() } }
-                ],
+            where: {
+                AND: [{ productId }, { expiresAt: { gt: new Date() } }],
             },
         });
 
         return summary ? summary.content : null;
-    }
+    },
 };

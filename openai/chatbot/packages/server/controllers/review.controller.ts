@@ -21,9 +21,9 @@ export default {
         const summary = await reviewService.getReviewSummary(productId);
         const reviews = await reviewService.getReviews(productId);
 
-        res.json({ 
+        res.json({
             summary,
-            reviews
+            reviews,
         });
     },
 
@@ -42,7 +42,9 @@ export default {
 
         const reviews = await reviewRepository.getReviews(productId, 1);
         if (!reviews.length) {
-            res.status(400).json({ error: 'There are no reviews to summarize.' });
+            res.status(400).json({
+                error: 'There are no reviews to summarize.',
+            });
             return;
         }
 
