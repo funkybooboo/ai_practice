@@ -1,14 +1,9 @@
-import OpenAI from 'openai';
-
 import conversationRepository from '../repositories/conversation.repository';
-import template from '../prompts/chatbot.txt';
-import dwight_schrute from '../prompts/dwight_schrute.txt';
+import template from '../prompts/dwight_chatbot/template.txt';
+import dwight_schrute from '../prompts/dwight_chatbot/quotes.txt';
+import llmClient from "../llm/client";
 
 const instructions = template.replace('{{quotes}}', dwight_schrute);
-
-const client = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
 
 export type ChatResponse = {
     id: string;
@@ -20,21 +15,20 @@ export default {
         prompt: string,
         conversationId: string
     ): Promise<ChatResponse> {
-        const reponse = await client.responses.create({
+        const { text, id } = await llmClient.generateText({
             model: 'gpt-4o-mini',
             instructions,
-            input: prompt,
+            prompt,
             temperature: 0.2,
-            max_output_tokens: 100,
-            previous_response_id:
-                conversationRepository.getLastResponseId(conversationId),
+            maxTokens: 100,
+            previousResponseId: conversationRepository.getLastResponseId(conversationId),
         });
 
-        conversationRepository.setLastResponseId(conversationId, reponse.id);
+        conversationRepository.setLastResponseId(conversationId, id);
 
         return {
-            id: reponse.id,
-            message: reponse.output_text,
+            id: id,
+            message: text,
         };
     },
 };
