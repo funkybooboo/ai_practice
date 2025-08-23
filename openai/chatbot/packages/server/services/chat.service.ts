@@ -1,7 +1,7 @@
 import conversationRepository from '../repositories/conversation.repository';
 import template from '../prompts/dwight_chatbot/template.txt';
 import dwight_schrute from '../prompts/dwight_chatbot/quotes.txt';
-import llmClient from "../llm/client";
+import llmClient from '../llm/client';
 
 const instructions = template.replace('{{quotes}}', dwight_schrute);
 
@@ -21,7 +21,8 @@ export default {
             prompt,
             temperature: 0.2,
             maxTokens: 100,
-            previousResponseId: conversationRepository.getLastResponseId(conversationId),
+            previousResponseId:
+                conversationRepository.getLastResponseId(conversationId),
         });
 
         conversationRepository.setLastResponseId(conversationId, id);

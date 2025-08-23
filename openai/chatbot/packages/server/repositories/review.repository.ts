@@ -1,4 +1,4 @@
-import type { Review } from "../generated/prisma";
+import type { Review } from '../generated/prisma';
 import { PrismaClient } from '../generated/prisma';
 
 export default {
@@ -7,7 +7,7 @@ export default {
         return await prisma.review.findMany({
             where: { productId },
             orderBy: { createdAt: 'desc' },
-            take: limit
+            take: limit,
         });
-    }
+    },
 };

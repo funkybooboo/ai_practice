@@ -26,5 +26,5 @@ export default {
         // TODO save summary to db
 
         res.json({ summary });
-    }
+    },
 };
