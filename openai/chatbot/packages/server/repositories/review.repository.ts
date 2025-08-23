@@ -27,5 +27,11 @@ export default {
             create: data,
             update: data
         });
+    },
+
+    async getReviewSummary(productId: number) {
+        return prisma.summary.findUnique({
+            where: { productId },
+        });
     }
 };
