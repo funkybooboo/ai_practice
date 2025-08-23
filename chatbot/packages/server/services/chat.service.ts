@@ -1,9 +1,6 @@
 import conversationRepository from '../repositories/conversation.repository';
-import template from '../prompts/dwight_chatbot/template.txt';
-import dwight_schrute from '../prompts/dwight_chatbot/quotes.txt';
+import instructions from '../prompts/dwight_chatbot/instructions.txt';
 import llmClient from '../llm/client';
-
-const instructions = template.replace('{{quotes}}', dwight_schrute);
 
 export type ChatResponse = {
     id: string;
@@ -16,7 +13,6 @@ export default {
         conversationId: string
     ): Promise<ChatResponse> {
         const { text: message, id } = await llmClient.generateText({
-            model: 'gpt-4o-mini',
             instructions,
             prompt,
             temperature: 0.2,
