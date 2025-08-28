@@ -1,9 +1,9 @@
 import random
 from typing import List
 
-from perceptron.activation_functions import sigmoid_function
-from perceptron.list_utils import softmax_list, argmax_2d
-from perceptron.perceptron import Perceptron
+from deep_learning.activation_functions import sigmoid_function
+from deep_learning.list_utils import softmax_list, argmax_2d
+from deep_learning.perceptron import Perceptron
 
 
 class Mlp:
