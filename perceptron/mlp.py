@@ -24,7 +24,7 @@ class Mlp:
         self.b3 = [0.0 for _ in range(output_size)]
 
     @staticmethod
-    def one_hot(y: List[int], num_classes: int) -> List[List[float]]:
+    def _one_hot(y: List[int], num_classes: int) -> List[List[float]]:
         """
         Convert integer class labels to one-hot encoding using lists.
 
@@ -62,7 +62,7 @@ class Mlp:
 
     def fit(self, X: List[List[float]], y: List[int], lr: float = 0.1, epochs: int = 5) -> None:
         # Convert y to one-hot
-        y_onehot = one_hot(y, self.output_size)
+        y_onehot = self._one_hot(y, self.output_size)
         for epoch in range(epochs):
             # Train each neuron in each layer independently
             # Layer 1
