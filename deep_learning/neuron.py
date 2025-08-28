@@ -3,7 +3,7 @@ from typing import List
 import random
 
 
-class Perceptron:
+class Neuron:
     def __init__(self, input_size: int, activation: Callable[[float], float], lr: float = 0.01) -> None:
         random.seed(42)
         self.ws: List[float] = [random.gauss(0, 0.1) for _ in range(input_size)]
@@ -16,7 +16,7 @@ class Perceptron:
         s = sum(x * w for x, w in zip(xs, self.ws)) + self.b
         return self.activation(s)
 
-    def train(self, xss: List[List[float]], ys: List[float], epochs: int = 1) -> None:
+    def fit(self, xss: List[List[float]], ys: List[float], epochs: int = 1) -> None:
         """Train the deep_learning using simple deep_learning learning rule."""
         for _ in range(epochs):
             for xs, y in zip(xss, ys):

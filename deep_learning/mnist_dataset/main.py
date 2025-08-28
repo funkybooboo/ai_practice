@@ -5,7 +5,7 @@ import random
 import matplotlib.pyplot as plt
 from typing import List, Optional
 
-from deep_learning.mlp import Mlp
+from deep_learning.neural_network import NeuralNetwork
 from deep_learning.normalizers import normalize_image
 
 
@@ -50,7 +50,7 @@ def main() -> None:
     test_images_flat: List[List[float]] = [normalize_image(flatten(img)) for img in test_images_raw]
 
     # Build MLP with dynamic hidden layers
-    mlp: Mlp = Mlp(
+    nn: NeuralNetwork = NeuralNetwork(
         input_size=MLP_INPUT_SIZE,
         hidden_sizes=MLP_HIDDEN_SIZES,
         output_size=MLP_OUTPUT_SIZE,
@@ -58,10 +58,10 @@ def main() -> None:
     )
 
     # Train
-    mlp.fit(train_images_flat, train_labels, epochs=EPOCHS)
+    nn.fit(train_images_flat, train_labels, epochs=EPOCHS)
 
     # Evaluate
-    predictions: List[float] = mlp.predict(test_images_flat)
+    predictions: List[float] = nn.predict(test_images_flat)
     accuracy: float = sum(p == t for p, t in zip(predictions, test_labels)) / len(test_labels)
     print(f"Test accuracy: {accuracy:.2%}")
 

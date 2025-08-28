@@ -1,12 +1,11 @@
-import random
 from typing import List
 
 from deep_learning.activation_functions import sigmoid_function
 from deep_learning.list_utils import softmax_list, argmax_2d
-from deep_learning.perceptron import Perceptron
+from deep_learning.neuron import Neuron
 
 
-class Mlp:
+class NeuralNetwork:
     def __init__(self, input_size: int, hidden_sizes: List[int], output_size: int, lr: float = 0.1) -> None:
         """
         Build an MLP with any number of hidden layers.
@@ -15,19 +14,18 @@ class Mlp:
         :param output_size: number of output neurons/classes
         :param lr: learning rate
         """
-        random.seed(42)
         self.lr = lr
 
         # Build layers as lists of Perceptrons
-        self.layers: List[List[Perceptron]] = []
+        self.layers: List[List[Neuron]] = []
 
         prev_size = input_size
         for h_size in hidden_sizes:
-            self.layers.append([Perceptron(prev_size, sigmoid_function, lr) for _ in range(h_size)])
+            self.layers.append([Neuron(prev_size, sigmoid_function, lr) for _ in range(h_size)])
             prev_size = h_size
 
         # Output layer
-        self.layers.append([Perceptron(prev_size, lambda z: z, lr) for _ in range(output_size)])  # linear output
+        self.layers.append([Neuron(prev_size, lambda z: z, lr) for _ in range(output_size)])  # linear output
 
     @staticmethod
     def _one_hot(y: List[float], num_classes: int) -> List[List[float]]:
@@ -46,7 +44,7 @@ class Mlp:
     def predict(self, xss: List[List[float]]) -> List[float]:
         return argmax_2d(self._forward(xss))
 
-    def fit(self, xss: List[List[float]], ys: List[float], epochs: int = 5) -> None:
+    def fit(self, xss: List[List[float]], ys: List[float], epochs) -> None:
         y_onehot = self._one_hot(ys, len(self.layers[-1]))
 
         for epoch in range(epochs):
@@ -58,7 +56,7 @@ class Mlp:
             # Train output layer independently using Perceptron learning
             for j, neuron in enumerate(self.layers[-1]):
                 target_j = [row[j] for row in y_onehot]
-                neuron.train(activations, target_j, epochs=1)
+                neuron.fit(activations, target_j, epochs=1)
 
             preds = self.predict(xss)
             acc = sum(p == t for p, t in zip(preds, ys)) / len(ys)

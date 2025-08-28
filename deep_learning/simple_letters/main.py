@@ -5,7 +5,7 @@ from deep_learning.activation_functions import (
     softplus, elu, gelu, selu
 )
 from deep_learning.flatteners import flatten
-from deep_learning.perceptron import Perceptron
+from deep_learning.neuron import Neuron
 
 
 def read_letter_file(file_path: str) -> List[List[float]]:
@@ -44,13 +44,13 @@ def main():
             for bias in biases:
                 for epochs in epochs_list:
                     # Initialize Perceptron
-                    p = Perceptron(input_size=len(left_t), activation=activation, lr=lr)
+                    p = Neuron(input_size=len(left_t), activation=activation, lr=lr)
                     p.b = bias  # set initial bias
 
                     # Train deep_learning
                     xss = [left_t, right_t, left_j, right_j]
                     ys = [1.0, 1.0, 0.0, 0.0]  # 1 for 't', 0 for 'j'
-                    p.train(xss, ys, epochs=epochs)
+                    p.fit(xss, ys, epochs=epochs)
 
                     # Test deep_learning
                     left_t_r = p.predict(left_t)
