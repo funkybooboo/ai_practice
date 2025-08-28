@@ -1,7 +1,8 @@
 from typing import List, Callable
 
 from activation_functions import step_function, identity, sigmoid_function, leaky_relu, relu, tanh_function, softplus, elu, gelu, selu
-from perceptron import flatten_xs, perceptron, train_perceptron
+from flatteners import flatten
+from perceptron import perceptron, train_perceptron
 
 
 def read_letter_file(file_path: str) -> List[List[float]]:
@@ -21,10 +22,10 @@ def read_letter_file(file_path: str) -> List[List[float]]:
 
 
 def main():
-    left_t: List[float] = flatten_xs(read_letter_file('./t/left_t.txt'))
-    right_t: List[float] = flatten_xs(read_letter_file('./t/right_t.txt'))
-    left_j: List[float] = flatten_xs(read_letter_file('./j/left_j.txt'))
-    right_j: List[float] = flatten_xs(read_letter_file('./j/right_j.txt'))
+    left_t: List[float] = flatten(read_letter_file('./t/left_t.txt'))
+    right_t: List[float] = flatten(read_letter_file('./t/right_t.txt'))
+    left_j: List[float] = flatten(read_letter_file('./j/left_j.txt'))
+    right_j: List[float] = flatten(read_letter_file('./j/right_j.txt'))
 
     _as: List[Callable[[float], float]] = [
         identity, step_function, sigmoid_function, relu, leaky_relu,

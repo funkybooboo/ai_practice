@@ -2,14 +2,6 @@ from collections.abc import Callable
 from typing import List
 
 
-def flatten_xs(raw_xs: List[List[float]]) -> List[float]:
-    xs: List[float] = []
-    for row in raw_xs:
-        for c in row:
-            xs.append(c)
-    return xs
-
-
 def perceptron(xs: List[float], ws: List[float], b: float, a: Callable[[float], float]) -> float:
     s = 0
     for x, w in zip(xs, ws):
