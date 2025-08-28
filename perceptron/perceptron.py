@@ -1,5 +1,5 @@
 from collections.abc import Callable
-from typing import List
+from typing import List, Tuple
 
 
 def perceptron(xs: List[float], ws: List[float], b: float, a: Callable[[float], float]) -> float:
@@ -10,7 +10,7 @@ def perceptron(xs: List[float], ws: List[float], b: float, a: Callable[[float], 
     return a(s)
 
 
-def train_perceptron(xss: List[List[float]], ys: List[int], ws: List[float], b: float, a: Callable[[float], float], lr: float, epochs: int) -> (List[float], float):
+def train_perceptron(xss: List[List[float]], ys: List[float], ws: List[float], b: float, a: Callable[[float], float], lr: float, epochs: int) -> Tuple[List[float], float]:
     for _ in range(epochs):
         for xs, y in zip(xss, ys):
             prediction = perceptron(xs, ws, b, a)
