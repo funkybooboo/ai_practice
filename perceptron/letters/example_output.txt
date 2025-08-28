@@ -1,0 +1,6297 @@
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: -7.547683489845826
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0026284592227759
+right_t 0.9928142776933848
+left_j 0.0014435728995918495
+right_j 1.4432309756173822e-06
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: -5.6640002469538295
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0000000000000009
+right_t 1.0000000000000009
+left_j 8.881784197001252e-16
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: -4.217216919713586
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: -0.6352671160314997
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0042609849811162
+right_t 0.987809443173708
+left_j 0.0017300590641058378
+right_j 0.00031790911541185185
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: -0.3548439446325583
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999999
+right_t 0.9999999999999999
+left_j 0.0
+right_j -5.551115123125783e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: -0.13946188903337178
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j -2.7755575615628914e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 0.13277914772564764
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0044423767320425
+right_t 0.9872533504492995
+left_j 0.0017618908601629568
+right_j 0.0003530719914601743
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 0.23506231118091567
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 0.9999999999999999
+left_j 8.326672684688674e-17
+right_j 2.7755575615628914e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 0.31362200326442985
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 0.900825411482795
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0046237684829693
+right_t 0.986697257724891
+left_j 0.0017937226562202424
+right_j 0.0003882348675086078
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 0.8249685669943898
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 0.7667058955622303
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 7.81324178529712
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.00625629424131
+right_t 0.9816924232052164
+left_j 0.00208020882073523
+right_j 0.0007047007519451753
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 6.134124869315661
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 0.1
+Bias: 4.844460926242446
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0000000000000009
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: -13849875699279.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -28987250044709.0
+right_t -28391726693111.0
+left_j 42996125391516.0
+right_j -191678603845792.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: -1.2755702555974527e+135
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -3.177229334019657e+135
+right_t -2.8297043493503055e+135
+left_j 1.4226309865612146e+135
+right_j -1.5231945947943404e+136
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: -2337602732169.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -4877475444569.0
+right_t -4785633250439.0
+left_j 7332122720484.0
+right_j -32423546132320.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: -2.1529265527734827e+134
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -5.3625751834875215e+134
+right_t -4.7760173173381515e+134
+left_j 2.4011378536977374e+134
+right_j -2.5708706155411287e+135
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: -1058461291379.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -2198611600109.0
+right_t -2162733979031.0
+left_j 3369455757036.0
+right_j -14728539719712.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: -9.748403301956234e+133
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -2.4281620549643716e+134
+right_t -2.162569964431013e+134
+left_j 1.0872298523739956e+134
+right_j -1.164084467496477e+135
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: 220680149411.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 480252244351.0
+right_t 460165292377.0
+left_j -593211206412.0
+right_j 2966466692896.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: 2.03245892382262e+133
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 5.062510735588354e+133
+right_t 4.5087738847617965e+133
+left_j -2.2667814894981597e+133
+right_j 2.4270168054821038e+134
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: 11732953116521.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 24590026844491.0
+right_t 24066258735049.0
+left_j -36257213877444.0
+right_j 162221524406368.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: 1.0806021895583231e+135
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 2.6915969230267707e+135
+right_t 2.3971903564640925e+135
+left_j -1.2051850160864089e+135
+right_j 1.290377701295039e+136
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 1
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: -2.5204173594769357e+61
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -7.561002683459792e+61
+right_t -7.39116220321694e+61
+left_j -7.121551277912038e+61
+right_j -2.0597922877866485e+62
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: -4.581277413078359e+60
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.3743378922428894e+61
+right_t -1.343466562419783e+61
+left_j -1.294460296145104e+61
+right_j -3.744014795084704e+61
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: -2.2898445040015768e+60
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -6.869306932187877e+60
+right_t -6.715003801089863e+60
+left_j -6.47005742615443e+60
+right_j -1.8713583414422808e+61
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: 1.588405075202356e+57
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 4.765058053130771e+57
+right_t 4.6580220180954726e+57
+left_j 4.48810914216877e+57
+right_j 1.2981122001405278e+58
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: 2.062448458676622e+61
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 6.187141297022222e+61
+right_t 6.048161442998973e+61
+left_j 5.827539792681157e+61
+right_j 1.6855206194981938e+62
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: identity
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: -8.000000000000007
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: -6.300000000000013
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: -4.900000000000018
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: -0.7000000000000001
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: -0.5000000000000001
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: -0.40000000000000013
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 0.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 0.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 0.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 0.8
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 0.6000000000000001
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 0.40000000000000013
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 8.100000000000007
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 6.500000000000012
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 0.1
+Bias: 5.300000000000017
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: -7
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: -5
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: -4
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: -1
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: -1
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: -1
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 1
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 1
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 1
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 8
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 6
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 1
+Bias: 5
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: -10
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: -10
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: -10
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: -1
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: -1
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: -1
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 1
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 1
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 1
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 10
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 10
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: step_function
+Learning rate: 10
+Bias: 10
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1
+right_t 1
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: -8.11087703808256
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.3784245531729142
+right_t 0.3624128071989603
+left_j 0.07463036393902153
+right_j 0.012753531292783513
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: -6.122920402306394
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9775187527097605
+right_t 0.9574148582087065
+left_j 0.03891301446202443
+right_j 0.02033081882212935
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: -4.510276600238467
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9977514890242849
+right_t 0.9957763700440357
+left_j 0.003897737578081231
+right_j 0.002212120670959859
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: -0.762830341416438
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.794259980797815
+right_t 0.6900211986908891
+left_j 0.23328579225131588
+right_j 0.16671787885029146
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: -0.47565378866445146
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9772746786818565
+right_t 0.9568527970415384
+left_j 0.038269731654885154
+right_j 0.02231928987715369
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: -0.17279804862541928
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9977492792089143
+right_t 0.9957771419449244
+left_j 0.003895514706763978
+right_j 0.0022164935288152077
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 0.010865399431279513
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.8011606152185388
+right_t 0.6911666194853597
+left_j 0.23044404885848613
+right_j 0.1729365122501517
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 0.11874296767532737
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9773114351077853
+right_t 0.9568713690467845
+left_j 0.03821883041302954
+right_j 0.02233807763960316
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 0.2837399356958352
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9977494587192541
+right_t 0.9957773447896187
+left_j 0.0038952365962968668
+right_j 0.002216457513920319
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 0.7846982792941106
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.8085472401724416
+right_t 0.6927679825297112
+left_j 0.22802417058360372
+right_j 0.178381050903075
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 0.7132510635240441
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.977356585076472
+right_t 0.9568910689555157
+left_j 0.0381677576002896
+right_j 0.02234813317997765
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 0.7403642377310391
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9977497055265194
+right_t 0.995777554665052
+left_j 0.003894943976951912
+right_j 0.0022163694916608576
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 8.162814901993192
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9889711086456101
+right_t 0.9348365316824804
+left_j 0.4642446666988564
+right_j 0.4746771823182722
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 6.391243267245847
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9816389538120247
+right_t 0.9576838515478459
+left_j 0.03588335326133729
+right_j 0.021025490313960855
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 0.1
+Bias: 5.101761090110417
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9977706377008955
+right_t 0.995783070584391
+left_j 0.0038846113982005776
+right_j 0.0022043213173461996
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: -7.553064484326499
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.987744663194853
+right_t 0.9657699640495288
+left_j 0.021685770080591305
+right_j 0.015662877634615043
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: -5.607122145729691
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9979116631915976
+right_t 0.9960023143154169
+left_j 0.003528580592294097
+right_j 0.002092437460885776
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: -4.0346682614907055
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9997775674642151
+right_t 0.999585481456722
+left_j 0.000382518514857927
+right_j 0.0002188767082460792
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: -0.6312317608908065
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.988856235040219
+right_t 0.9705633203699774
+left_j 0.017815179069378254
+right_j 0.015843343800413058
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: -0.28905684728230385
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9979787907515397
+right_t 0.9960740769861423
+left_j 0.0034472729203249754
+right_j 0.0020597202150462192
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.05007629280863575
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9997784961582084
+right_t 0.99958545972573
+left_j 0.0003823024877114589
+right_j 0.000218348991435338
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.14366799546138284
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9899253010987547
+right_t 0.9706564709844098
+left_j 0.01738236923721121
+right_j 0.015805708258690668
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.30689845417450956
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9980124146983733
+right_t 0.9960731405919098
+left_j 0.0034366901827020406
+right_j 0.00204752036903056
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.507865237620667
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9997788718037722
+right_t 0.9995854162841415
+left_j 0.0003822448806215843
+right_j 0.00021813962575401786
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.9237012520385167
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9915776164746394
+right_t 0.9703854198248634
+left_j 0.01729295488250596
+right_j 0.015542751821364395
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.9071220232850855
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9980604378288528
+right_t 0.9960610840979561
+left_j 0.0034313618879592573
+right_j 0.00203018596012341
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 0.9689406515584952
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9997793071494374
+right_t 0.9995852927551933
+left_j 0.0003822406153755877
+right_j 0.00021790574700465362
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 7.802536480843156
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9860081194075266
+right_t 0.9653712159075147
+left_j 0.021354804205956514
+right_j 0.01722410417403288
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 6.1864610671294455
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9978878089779245
+right_t 0.995998407138595
+left_j 0.0035375277335029753
+right_j 0.002105255817414484
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 1
+Bias: 5.023629135420506
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9997783512242836
+right_t 0.999584783149339
+left_j 0.000382922880867172
+right_j 0.00021850069387407335
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -9.99775026287404
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.999999999999907
+right_t 0.9999555136150123
+left_j 4.298374056080343e-18
+right_j 8.795850018290761e-27
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -9.960241535552564
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999165
+right_t 0.9999653214921504
+left_j 5.1386096467739676e-18
+right_j 9.799208632667932e-27
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -9.761278151354338
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999505
+right_t 0.9999892136744637
+left_j 1.1960172105415127e-17
+right_j 1.6512003767035577e-26
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -3.6902778185496232
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9999999982637016
+right_t 0.9999821344574704
+left_j 1.0727709638023901e-17
+right_j 2.2047546234211215e-26
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -4.13575735253812
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999982
+right_t 0.9999996292667204
+left_j 4.0470260094748547e-16
+right_j 6.986182172562804e-25
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -4.46154552471617
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999987
+right_t 0.999999609354821
+left_j 3.9278243457129965e-16
+right_j 7.083752205056223e-25
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -4.604451652869748
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9991433533247015
+right_t 0.9989870339271094
+left_j 1.3355805942631732e-19
+right_j 1.9329065660472883e-28
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -4.836092566271919
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999987
+right_t 0.9999995362860478
+left_j 3.4791062600868587e-16
+right_j 6.661177847582918e-25
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: -5.023823988435501
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999987
+right_t 0.9999995043526425
+left_j 3.2986680776377296e-16
+right_j 6.384741810965132e-25
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: 3.693428012396673
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 7.792041239042454e-23
+right_j 1.7032344044848745e-18
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: 4.2208979412225185
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 3.668830831453129e-24
+right_j 5.1178257429834127e-20
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: 4.609275767136712
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 3.7292180542316845e-24
+right_j 5.502262325893978e-20
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: 10.001806427294827
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.948001916623683e-22
+right_j 4.281106665232451e-18
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: 10.00360796593864
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.9514731916097007e-22
+right_j 4.288766882629161e-18
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: sigmoid_function
+Learning rate: 10
+Bias: 10.00540463494309
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.9549412950682688e-22
+right_j 4.296420125881679e-18
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: -8.000000000000007
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: -6.20000000000001
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999982
+right_t 0.9999999999999982
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: -4.760000000000011
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: -0.6353895957841027
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.005067845249016
+right_t 0.9841380938729836
+left_j 0.002133595285937817
+right_j 0.0004857526779126209
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: -0.35493801653379764
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: -0.13953414197652916
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 2.7755575615628914e-17
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 0.13277914772564764
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0044423767320425
+right_t 0.9872533504492995
+left_j 0.0017618908601629568
+right_j 0.0003530719914601743
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 0.23506231118091567
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 0.9999999999999999
+left_j 8.326672684688674e-17
+right_j 2.7755575615628914e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 0.31362200326442985
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 0.900825411482795
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0046237684829693
+right_t 0.986697257724891
+left_j 0.0017937226562202424
+right_j 0.0003882348675086078
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 0.8249685669943898
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 0.7667058955622303
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 7.813060431639781
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0054243150205382
+right_t 0.9793672811439356
+left_j 0.001886566271143586
+right_j 0.0010645213113420482
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 6.133985578673897
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 0.1
+Bias: 4.8443539425556175
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -10.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -10.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -10.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -2.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 4.0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -1.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 9.0
+right_t 3.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -2.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 4.0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -6.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -11.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -9.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 3.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -1.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 3.0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -2.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 4.0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: -1.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 9.0
+right_t 3.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: 8.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 4.0
+right_t 6.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: 6.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 10.0
+right_t 4.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 1
+Bias: 4.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 4.0
+right_t 6.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -910.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -810.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -710.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -381.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -531.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -1311.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -100.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 100.0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -300.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -500.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -669.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -529.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 31.0
+right_t 31.0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -1149.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -290.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -390.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: relu
+Learning rate: 10
+Bias: -390.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0
+right_t 0
+left_j 0
+right_j 0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: -7.81171195258222
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.7648968654277528
+right_t 0.7732926963209756
+left_j -0.01131344566483465
+right_j -0.03129007851103641
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: -5.955116638991325
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0042952425975624
+right_t 1.0072872522547138
+left_j -0.00326702415678759
+right_j -0.012598781945059478
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: -4.441018536836482
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0000096208403049
+right_t 1.0000100979733464
+left_j 1.132494272848561e-05
+right_j -3.4232029734191373e-05
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: -0.6353892917070623
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0050657990363572
+right_t 0.9841477289968543
+left_j 0.0021306707326080865
+right_j 0.0004861036272895136
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: -0.35493778298413137
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j -1.1102230246251566e-18
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: -0.1395339625961768
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j -8.326672684688674e-19
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 0.13277914772564764
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0044423767320425
+right_t 0.9872533504492995
+left_j 0.0017618908601629568
+right_j 0.0003530719914601743
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 0.23506231118091567
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 0.9999999999999999
+left_j 8.326672684688674e-17
+right_j 2.7755575615628914e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 0.31362200326442985
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 0.900825411482795
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0046237684829693
+right_t 0.986697257724891
+left_j 0.0017937226562202424
+right_j 0.0003882348675086078
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 0.8249685669943898
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 0.7667058955622303
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 7.813063808052839
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0054356075650919
+right_t 0.979417046740136
+left_j 0.0018883908067719446
+right_j 0.0010581098390627375
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 6.133988171964537
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j -8.881784197001253e-18
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 0.1
+Bias: 4.8443559343606
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -7.916674174831072
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.02494800455642391
+right_t 1.7320915396904448
+left_j -0.02968345862533523
+right_j -0.005304508336090388
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -6.278072732202425
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 4.40166501968603
+right_t -0.009868288257802007
+left_j -0.09016418731183658
+right_j -0.021894766217837616
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -5.711281676175719
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.04476560738236273
+right_t 0.05096663129021639
+left_j -0.03046924833941835
+right_j -0.07166276580908075
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -2.8360630909971065
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 2.6339551998866777
+right_t -0.10801167417579642
+left_j -0.20611344727890568
+right_j -0.1427704614921074
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -4.165808041970885
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 3.0607167351576576
+right_t -0.18839072571231807
+left_j -0.12704499164290894
+right_j -0.10894126571793315
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -8.693529951406482
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.1953388452249345
+right_t -0.31684813042017324
+left_j -0.27456878129161555
+right_j -0.19024155335627413
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -1.2113229873499138
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.06656424228129434
+right_t 1.3174359151560555
+left_j -0.12549257421133564
+right_j -0.04982401601652731
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -2.000066662565195
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.048329924415961775
+right_t 4.1399895291893545
+left_j -0.006612073167786603
+right_j -0.15009888109255845
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -5.321895429428767
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.06737799325414867
+right_t -0.1303370650106014
+left_j -0.1422436481770577
+right_j -0.32696237493771274
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -2.0179449289113927
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.13959401107132874
+right_t -0.1195020768125692
+left_j -0.1376661386502895
+right_j -0.0853826501824347
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -4.613546248875029
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.26384609146618887
+right_t 2.513575158432058
+left_j -0.14616538775309498
+right_j -0.10598990281564932
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: -4.993849358576992
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.15093958350130077
+right_t -0.06282354407002569
+left_j -0.09508277459081292
+right_j -0.12196671250447719
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: 5.843513477097929
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.15959283143572836
+right_t 4.336688739532821
+left_j -0.10216069492621462
+right_j -0.0792874555116038
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: 2.6502770170698806
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.05574715032596105
+right_t -0.0448320831870301
+left_j -0.0614221069031162
+right_j -0.15200145909301233
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 1
+Bias: 0.07947021496926074
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.01366406621340588
+right_t -0.18533234693804176
+left_j -0.12371646451587133
+right_j -0.05338260847590775
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -108079401434.87106
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -14571770040.051676
+right_t 110752118929.95306
+left_j 67171797349.890686
+right_j -1008963907.9349676
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -1.7229058770797868e+113
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -5.108966608118612e+111
+right_t -5.150558770534117e+111
+left_j -5.302026154078012e+111
+right_j -1.3791641900676238e+112
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -134789976991.77509
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -18173014676.90352
+right_t 138123225737.14084
+left_j 83772531127.47153
+right_j -1258317682.599775
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -2.1487021600527668e+113
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -6.371588681970439e+111
+right_t -6.423459866817132e+111
+left_j -6.612360664317422e+111
+right_j -1.7200086863064855e+112
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -137757818720.31976
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -18573152969.887035
+right_t 141164459826.8285
+left_j 85617057102.7583
+right_j -1286023657.562529
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -2.1960128581608738e+113
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -6.511880023509525e+111
+right_t -6.564893321959683e+111
+left_j -6.75795338767735e+111
+right_j -1.757880296999691e+112
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -4991665820.768535
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -672999716.3760328
+right_t 5115105793.439137
+left_j 3102341024.9302044
+right_j -46599172.1643424
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: -7.95727129900034e+111
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -2.3595852738768454e+110
+right_t -2.378794687731374e+110
+left_j -2.4487501670087075e+110
+right_j -6.369694231257148e+110
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: 32887396459.269264
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 269728711480.46988
+right_t 249725279911.70444
+left_j 226389744458.71237
+right_j -1721853503.8151672
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: 9.272916322791128e+112
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 7.6052592825356e+113
+right_t 7.041243376750678e+113
+left_j 6.383275613352837e+113
+right_j -4.854930821630874e+111
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: leaky_relu
+Learning rate: 10
+Bias: nan
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t nan
+right_t nan
+left_j nan
+right_j nan
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: -7.494916508311805
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.892815376598207
+right_t 0.8676421552379197
+left_j 0.011899204209583554
+right_j 0.009584782930148797
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: -5.400007239698773
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9922940496544636
+right_t 0.9878027762438735
+left_j 0.0005663942247060443
+right_j 0.0008280134613100212
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: -3.635945096707462
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992497911922196
+right_t 0.9988050899863814
+left_j 5.558295663606157e-05
+right_j 8.010660497525264e-05
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: -0.5637337098022689
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9294437668781584
+right_t 0.8771634049177534
+left_j 0.006226535412589382
+right_j 0.00875178916804889
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: -0.07468624558189581
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9926340015818527
+right_t 0.9878154225447873
+left_j 0.0005753981455814989
+right_j 0.0008086415803839932
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 0.4543673914627856
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992527992042304
+right_t 0.9988046366708805
+left_j 5.569435884316968e-05
+right_j 7.995704610984303e-05
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 0.20361889046865073
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9293819237863227
+right_t 0.874347449435374
+left_j 0.00643483628869394
+right_j 0.008875762547829825
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 0.5145075229375254
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9926069602589265
+right_t 0.9877984223412203
+left_j 0.000575718386189664
+right_j 0.0008107153534130407
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 0.9068829341395989
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992523135111601
+right_t 0.9988047874822013
+left_j 5.567142389633473e-05
+right_j 7.997864985565013e-05
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 0.9704393392545566
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9276258503490739
+right_t 0.8731773323429555
+left_j 0.006422007075581124
+right_j 0.00905358446912708
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 1.1033838473553212
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9925912273554507
+right_t 0.987795295617695
+left_j 0.0005754666086173743
+right_j 0.000811696308699038
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 1.3591762297571985
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992523439467874
+right_t 0.998804741605493
+left_j 5.567518293634096e-05
+right_j 7.997849042368404e-05
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 8.187068631076784
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9997816833107398
+right_t 0.9916256893228856
+left_j -0.007974373435693845
+right_j 0.06342995652864498
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 6.737382993515127
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9991384492062535
+right_t 0.9911708001301959
+left_j 0.0005423968297918632
+right_j 0.00033803759626514226
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 0.1
+Bias: 5.696967529976861
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9994469418345507
+right_t 0.9987651722333222
+left_j 6.353254588710043e-05
+right_j 7.064198158500382e-05
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: -7.68792833907755
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9998971714870728
+right_t 0.9889855317089011
+left_j -0.9999539510833907
+right_j -0.9999584671299414
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: -3.681041216703904
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999612665
+right_t 0.9999999998961818
+left_j 0.999999189012451
+right_j 0.9999620114055436
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: -0.49524274907142374
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999982137
+right_t 0.9999999999762258
+left_j 0.999988128174491
+right_j 0.9999623519705402
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 0.7420799009764126
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9999999996766369
+right_t 0.9999997529570688
+left_j -0.9848145303889023
+right_j 0.9998641519268272
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 2.5734826725048343
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999868855263
+right_t 0.9999999998710917
+left_j 0.9999994362557608
+right_j 0.9999626281650409
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 2.839041096596992
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999939551130134
+right_t 0.9999935879891685
+left_j -0.9848855266575374
+right_j 0.9495784354080498
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: -0.06053211467596131
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9990690437582391
+right_t 0.9988502011277601
+left_j -0.9999918290859409
+right_j -0.9999599843323265
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: -0.039551629606224936
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9996536109763725
+right_t 0.9994417121388366
+left_j -0.9999855587459127
+right_j -0.9999619945958157
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 0.08907191687979699
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9998983183386292
+right_t 0.9998808964154399
+left_j -0.9999539673276258
+right_j -0.9999622459744398
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 2.7776458193071556
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9999999959144957
+right_t 0.9999999996483961
+left_j 0.999999248085498
+right_j 0.9999571087340693
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 3.374549627812095
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999991881013816
+right_t 0.9999999995020928
+left_j 0.984671552436616
+right_j -0.5930987738660403
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 3.7356352135145237
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.99999999937391
+right_t 0.9999945817575413
+left_j 0.9849785804477711
+right_j -0.9840643731134524
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 8.052259885619026
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9995325967558232
+right_t 0.9996438113614483
+left_j 0.9900248936151574
+right_j -0.9998694495083615
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 7.008599464192441
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999225851660226
+right_t 0.9998418460537721
+left_j -0.9851215912916591
+right_j 0.9996291225455468
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 1
+Bias: 6.27289513124393
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.99998182730607
+right_t 0.999988133290076
+left_j -0.984932845407013
+right_j 0.99703091257978
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 9.99999979388484
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -0.9999999958777045
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 19.999993857767784
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 30.000056434306217
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -1.0
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 16.615934919327493
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -0.9999998340052687
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 16.595137375751413
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999916
+right_t 1.0
+left_j -1.0
+right_j 0.9999999999999916
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 16.592871741677524
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999921
+right_t 1.0
+left_j -1.0
+right_j 0.9999999999999921
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 0.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 0.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 0.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 22.898810812429083
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.0
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 23.169148946256342
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.0
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 23.51917504693604
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.0
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 19.99999200273688
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 30.000073129575576
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j -1.0
+right_j 1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: tanh_function
+Learning rate: 10
+Bias: 30.020567602548695
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: -7.549029054403349
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0031593924914644
+right_t 0.9628977831909902
+left_j 0.012907081107628393
+right_j -0.0018961198922942124
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: -5.665033722393449
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j -8.881784197001252e-16
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: -4.2180106917242455
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: -0.635306492250002
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0043539153287928
+right_t 0.9868886013247473
+left_j 0.0017782920174984618
+right_j 0.00038764322671680507
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: -0.35487418796388004
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: -0.13948511775172548
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 2.7755575615628914e-17
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 0.13277914772564764
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0044423767320425
+right_t 0.9872533504492995
+left_j 0.0017618908601629568
+right_j 0.0003530719914601743
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 0.23506231118091567
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 0.9999999999999999
+left_j 8.326672684688674e-17
+right_j 2.7755575615628914e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 0.31362200326442985
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 0.900825411482795
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0046237684829693
+right_t 0.986697257724891
+left_j 0.0017937226562202424
+right_j 0.0003882348675086078
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 0.8249685669943898
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 0.7667058955622303
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 7.813215413425555
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0060360672348807
+right_t 0.9815068407678798
+left_j 0.0020124954482403368
+right_j 0.0007628012639138149
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 6.134104614113923
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 0.1
+Bias: 4.8444453690152605
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -15.971628396858256
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -0.9999999999999951
+left_j -1.0
+right_j -0.9999999937380251
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -20.504674773219143
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -0.999999999999999
+left_j -1.0
+right_j -0.9993371234521183
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -25.12087363488655
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.9999999999864104
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -25.958447855815454
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -29.217702422966457
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.9999999979603936
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -32.13146451991091
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.9999999656814993
+right_t -0.9999999931354423
+left_j -0.9999999999999993
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -4.010456124181056
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.996936679875624
+right_t 8.533248300151127
+left_j 4.755779663777627
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -8.825358298937552
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.8893393637368433
+right_t -1.0
+left_j -0.9999999999999992
+right_j -0.9999999999994056
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -24.77030186895182
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -2.2963269143392373
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.9999305706963629
+right_t -0.9999999684803081
+left_j -0.9999999999999996
+right_j -0.09105086484866343
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -14.492794148401359
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -0.9999999987274824
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -15.275741103096042
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.9999999986775241
+right_t -0.999447563036549
+left_j -0.999987946888529
+right_j -0.9999999999995625
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: 8.275224978547222
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 16.306258364798232
+right_t -0.9999999990750582
+left_j 6.758781603627407
+right_j 4.668158840598045
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -10.226854563961162
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -0.9999999999981541
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 1
+Bias: -8.760291596782281
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 4.641099968318628
+right_t -0.9999999870952224
+left_j -0.9910194225338502
+right_j -0.5078064799643516
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -629.4540503154662
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -2548.656976229819
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -4133.271564052363
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -547.7143237832543
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -2003.3039088068422
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -2123.5462105358683
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -440.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -3132.8391539748045
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -4200.156057820555
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -1219.0000795567496
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -1286.0416462489593
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -1766.8737597009022
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -920.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -2769.319540439508
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: elu
+Learning rate: 10
+Bias: -3170.6813844091284
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.0
+right_t -1.0
+left_j -1.0
+right_j -1.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -8.119409749052563
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.4606087505867917
+right_t 0.4338964136206715
+left_j 0.07491363759655909
+right_j 0.012514706222806614
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -6.584228206001069
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9933416461014565
+right_t 0.9802413007774049
+left_j 0.022356651644628505
+right_j 0.011116199434453177
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -5.619064688747166
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992607248454276
+right_t 0.9980363695856599
+left_j 0.0021563816138716278
+right_j 0.0013856910125254213
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -0.9086781317915236
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.931998976310585
+right_t 0.7696022204694912
+left_j 0.1770155955209173
+right_j 0.13141360163303462
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -1.0309494365291607
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9923857204937074
+right_t 0.979346578094987
+left_j 0.021861616842827555
+right_j 0.014449465759310094
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -1.3527882587744766
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992539935651011
+right_t 0.9980346193241028
+left_j 0.002143940971376396
+right_j 0.001414243874213354
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -0.13896980173404597
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.932526872483156
+right_t 0.7683320346437676
+left_j 0.17435913479812631
+right_j 0.13623762494759759
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -0.43959368039297647
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9923737327854718
+right_t 0.979357386010537
+left_j 0.021815433174501558
+right_j 0.014509645886624028
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -0.8985711930491012
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992538708703009
+right_t 0.9980347954994013
+left_j 0.0021433017937392104
+right_j 0.0014149692493256457
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: 0.6306356580787649
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9313905797203303
+right_t 0.7661814670650446
+left_j 0.1731131528002143
+right_j 0.14094526519829226
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: 0.15168920652147588
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.992360901527483
+right_t 0.9793579542385996
+left_j 0.021785936554778836
+right_j 0.014564820263259767
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: -0.44441135521479247
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.999253753609605
+right_t 0.9980349138894912
+left_j 0.0021427899883216346
+right_j 0.001415613270022403
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: 7.55326742306459
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.8951603937060111
+right_t 0.7355480954404138
+left_j 0.18298950708404688
+right_j 0.17889954754923523
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: 5.470345857118862
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9922341932061144
+right_t 0.9791541399450346
+left_j 0.021874305336695658
+right_j 0.014933646445682928
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 0.1
+Bias: 3.640797735751648
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9992526709377545
+right_t 0.9980340332559682
+left_j 0.002141976383086455
+right_j 0.0014196155829616802
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -13.69278593011084
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0458378602111814e-09
+right_t 1.332267629550187e-15
+left_j 3.486100297322931e-14
+right_j 4.516251815946306e-10
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -15.184451224495932
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.7097434579227266e-14
+right_t 0.00048141351507879036
+left_j 3.248862037690297e-08
+right_j 4.748982973360576e-09
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -11.819098812535564
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 7.046722004988841
+right_t 0.8595239100821012
+left_j 0.00042522156651827607
+right_j 0.0010932608430215558
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -4.996579654760173
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 4.341587257593897e-07
+right_t 2.0414225863211362e-10
+left_j 1.7530377148373666e-10
+right_j 8.888217233564468e-08
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -6.321883548858698
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 7.0115611858280755e-06
+right_t 0.012752522246930348
+left_j 7.084338331491152e-08
+right_j 8.925912817148708e-06
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -6.860799501694005
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.03383716254440409
+right_t 0.0005318359624831793
+left_j 2.7130476382217525e-07
+right_j 4.8752664597879254e-06
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -1.3382699530258126
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.08542963702939035
+right_t 0.005406776187570678
+left_j 3.5945915107274507e-06
+right_j 0.0019283063092744384
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -1.9896299495914374
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.1730159664727024
+right_t 0.22833104007806432
+left_j 0.0003679044228454253
+right_j 0.0005486141289944329
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -2.4703301546997363
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.5334155669710566
+right_t 0.5771190866574103
+left_j 0.00010677538494224272
+right_j 0.00011140665155646615
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -1.3361415095800728
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 2.1631411534176752e-05
+right_t 0.6987117857580504
+left_j 6.037718078318535e-05
+right_j 2.768621246470798e-07
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -3.9312874557069555
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.05391510831067911
+right_t 3.0171691766114715e-09
+left_j 2.458621525566923e-09
+right_j 1.5886655510607397e-06
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -3.399765144771703
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 4.123422895352984
+right_t 2.2754548774185435
+left_j 3.78778045592808e-05
+right_j 0.0008640891001732273
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: 7.34761490613802
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 2.159778006166157
+right_t 1.0308902746146742
+left_j 0.0008081889848422376
+right_j 0.01606919112257251
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -1.6321410082645857
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0036416142610912e-13
+right_t 1.110223024625156e-15
+left_j 1.9984014443252798e-15
+right_j 3.1374902675902e-13
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 1
+Bias: -6.128197157355717
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 2.2608266780694642e-08
+right_t 2.1919421830758562e-10
+left_j 4.420241950232829e-12
+right_j 8.142537751847447e-10
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -910.3311164842207
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -1095.1359647549207
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.28518690713854983
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -1300.7889656785546
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -890.2145087754134
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -859.6244633182357
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -974.6517055896516
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -652.079779489518
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -869.9414937173581
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -1600.8027352156641
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -228.04370098737087
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -660.4948735964681
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -1524.926553680976
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -289.9868343192269
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -345.41966928956936
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: softplus
+Learning rate: 10
+Bias: -1280.8237427249
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.0
+right_t 0.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: -7.9464337807535985
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.14686917184976278
+right_t 0.1673799849435574
+left_j -0.06986544232611636
+right_j -0.00014787065811355126
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: -5.951017334152589
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999614233765
+right_t 0.9999972513167099
+left_j 2.200217612611366e-06
+right_j -6.796454616948802e-08
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: -4.418416124270063
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0000000000000004
+right_t 1.0000000000000004
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: -0.6154413869158242
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.999553874443035
+right_t 0.9666478450084688
+left_j 0.019777618043803583
+right_j 0.0047992526133318674
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: -0.3203691990158368
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999996275
+right_t 0.9999999999781304
+left_j 1.7316065248830202e-11
+right_j -3.2032709817980956e-13
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: -0.09373580754905589
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 0.9999999999999994
+left_j -2.7755575615628914e-17
+right_j -4.857225732735059e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 0.15264088516009733
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9992752868272251
+right_t 0.9700691166545455
+left_j 0.017083340517562395
+right_j 0.005283126114366454
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 0.26956471337706583
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999996584
+right_t 0.999999999979945
+left_j 1.5879186854708598e-11
+right_j -2.936817455888319e-13
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 0.3593693266842759
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j -2.7755575615628914e-17
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 0.9207373090565946
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9990724455137786
+right_t 0.9698599547443372
+left_j 0.01648739519877502
+right_j 0.006147702423226433
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 0.8595094952291265
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999996648
+right_t 0.9999999999803126
+left_j 1.5588252911090964e-11
+right_j -2.883249194950205e-13
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 0.8124828093235014
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 7.833507765163208
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.9973981269531141
+right_t 0.9569530937853548
+left_j 0.019302448215192083
+right_j 0.012924449342855712
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 6.16893775429202
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999996246
+right_t 0.9999999999779509
+left_j 1.7458923196531773e-11
+right_j -3.228528555608292e-13
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 0.1
+Bias: 4.890446719326178
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 0.9999999999999994
+right_t 0.9999999999999994
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -9.988491315221683
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.013570783133627681
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -14.962036316987032
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -18.03204008133597
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -3.7147150346301814
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 0.33866212878944635
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -4.094410417926898
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 2.428884481374681
+right_t 0.27317302365299045
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -12.279570723551988
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -4.534502567926632
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -4.180103167788087e-06
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -4.641872636820084
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 10.07627899550278
+right_t -0.0
+left_j -0.0
+right_j -1.218785512406489e-13
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -7.447405559589118
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.04156857451528843
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -0.027937816378550667
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -3.768642248521267e-09
+right_t 3.7340735553676723
+left_j -0.0
+right_j -1.6604992349144917e-07
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -8.331150631351218
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: -8.815622709976596
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0006037967031621701
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: 5.904622712677354
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.025100144651519694
+right_t 4.099224605280281
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: 3.260388038642409
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 6.113903248678772
+right_t 3.096104756477773
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 1
+Bias: 0.8238351810900236
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -3.9759693096362777e-16
+right_t 2.5722078145701297
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -910.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -810.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -710.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -137.05432272359974
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.006484383633951797
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -871.1617086260962
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -1089.5038699113413
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -100.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 100.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -300.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -500.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -556.9478449686998
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -650.1062369194829
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -807.2179368483976
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -290.0
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -390.0
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: gelu
+Learning rate: 10
+Bias: -390.0
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -0.0
+right_t -0.0
+left_j -0.0
+right_j -0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: -7.554762630813262
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0043422884950417
+right_t 0.977324357062606
+left_j 0.0012789447473025883
+right_j 0.0009999878874789273
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: -5.675859151372848
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0000000000000002
+right_t 1.0000000000000002
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: -4.23274697324752
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0000000000000002
+right_t 1.0000000000000002
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: -0.6415417486598117
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0030359423564967
+right_t 0.9927084216989155
+left_j 0.0008138017440617326
+right_j 0.00013049596188301318
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: -0.36608493770366474
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: -0.15451734906054107
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 0.12649520940993433
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.003548928541595
+right_t 0.9914770124314768
+left_j 0.0009248242321767535
+right_j 0.0001619184099420479
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 0.22381417077575932
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 0.2985610536498912
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 0.8945481935802393
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.0037524938926852
+right_t 0.9910254660172189
+left_j 0.0009534215015667414
+right_j 0.0001772963771050954
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 0.8137255882753855
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 0.7516489104366764
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0
+right_t 1.0
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 7.807032359531225
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t 1.005477685753595
+right_t 0.9872654839872888
+left_j 0.001184738616290258
+right_j 0.00030688812371483444
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 6.122933959081844
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t 1.0000000000000002
+right_t 1.0000000000000002
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 0.1
+Bias: 4.8294439328811825
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 1.0000000000000002
+right_t 1.0000000000000002
+left_j 0.0
+right_j 0.0
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -21.391485038444475
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7579204455147546
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -26.765885144060658
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993343676248
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473644
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -39.205053485070835
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -13.44255413836553
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t 22.866998010402362
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -30.175903224675984
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -29.945996624381674
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t 6.727975825294682
+left_j -1.7580112649143742
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -39.77185315050724
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -55.5593226489443
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -66.8828163734051
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -15.898968363827159
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473753
+left_j -1.7580992027055975
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -27.406844083399445
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -28.397799726109987
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -0.725509034860497
+right_j -1.758095707339778
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -6.000932961152708
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.6158275611631694
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -33.53421944170181
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 1
+Bias: -53.26583025809629
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -1574.839309782739
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -3071.5764251038145
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -4169.749209321228
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -2145.2350559588376
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -2607.173718359706
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -4100.535486721626
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -1832.2108759382518
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -4896.024853097097
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -7716.4974618793385
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -966.275561818452
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -3475.9353450447675
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -4680.87704599924
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -711.0821209571194
+Epochs: 10
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -2392.6403002079314
+Epochs: 100
+t >= 0.5, j < 0.5
+
+left_t -1.7580993408473766
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766
+
+---
+
+Can a perceptron tell the difference between a t and a j?
+Activation function: selu
+Learning rate: 10
+Bias: -3326.093882786605
+Epochs: 1000
+t >= 0.5, j < 0.5
+
+left_t 28.57762668342831
+right_t -1.7580993408473766
+left_j -1.7580993408473766
+right_j -1.7580993408473766

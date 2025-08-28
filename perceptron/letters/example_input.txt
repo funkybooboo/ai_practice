@@ -1,0 +1,15 @@
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+
+# you can use # as comments
+# use 0 for off and 1 for on
+# you can form letters like this:
+#
+# 1 1 1 0
+# 0 1 0 0
+# 0 1 0 0
+# 0 1 0 0
+#
+# That is a T, doesnt matter where or how big the T is
