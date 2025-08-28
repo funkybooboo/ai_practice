@@ -1,4 +1,4 @@
-from perceptron.curcits.gates.gate import gate, print_table
+from deep_learning.curcits.gates.gate import gate, print_table
 
 
 def or_gate(x1: float, x2: float) -> float:

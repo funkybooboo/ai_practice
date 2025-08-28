@@ -1,8 +1,11 @@
 from typing import List, Callable
 
-from perceptron.activation_functions import step_function, identity, sigmoid_function, leaky_relu, relu, tanh_function, softplus, elu, gelu, selu
-from perceptron.flatteners import flatten
-from perceptron.perceptron import perceptron, train_perceptron
+from deep_learning.activation_functions import (
+    step_function, identity, sigmoid_function, leaky_relu, relu, tanh_function,
+    softplus, elu, gelu, selu
+)
+from deep_learning.flatteners import flatten
+from deep_learning.perceptron import Perceptron
 
 
 def read_letter_file(file_path: str) -> List[List[float]]:
@@ -27,36 +30,38 @@ def main():
     left_j: List[float] = flatten(read_letter_file('./j/left_j.txt'))
     right_j: List[float] = flatten(read_letter_file('./j/right_j.txt'))
 
-    _as: List[Callable[[float], float]] = [
+    activations: List[Callable[[float], float]] = [
         identity, step_function, sigmoid_function, relu, leaky_relu,
         tanh_function, elu, softplus, gelu, selu
     ]
 
-    lrs: List[float] = [0.1, 1, 10]
-    bs: List[float] = [-10, -1, 0, 1, 10]
+    learning_rates: List[float] = [0.1, 1, 10]
+    biases: List[float] = [-10, -1, 0, 1, 10]
     epochs_list: List[int] = [10, 100, 1000]
 
-    for a in _as:
-        for lr in lrs:
-            for b in bs:
+    for activation in activations:
+        for lr in learning_rates:
+            for bias in biases:
                 for epochs in epochs_list:
-                    ws: List[float] = [0 for _ in range(len(left_t))]
+                    # Initialize Perceptron
+                    p = Perceptron(input_size=len(left_t), activation=activation, lr=lr)
+                    p.b = bias  # set initial bias
 
-                    # Train perceptron
+                    # Train deep_learning
                     xss = [left_t, right_t, left_j, right_j]
-                    ys = [1, 1, 0, 0]  # Labeling: 1 for 't', 0 for 'j'
-                    ws, b = train_perceptron(xss, ys, ws, b, a, lr, epochs)
+                    ys = [1.0, 1.0, 0.0, 0.0]  # 1 for 't', 0 for 'j'
+                    p.train(xss, ys, epochs=epochs)
 
-                    # After training, test the perceptron on the examples
-                    left_t_r: float = perceptron(left_t, ws, b, a)
-                    right_t_r: float = perceptron(right_t, ws, b, a)
-                    left_j_r: float = perceptron(left_j, ws, b, a)
-                    right_j_r: float = perceptron(right_j, ws, b, a)
+                    # Test deep_learning
+                    left_t_r = p.predict(left_t)
+                    right_t_r = p.predict(right_t)
+                    left_j_r = p.predict(left_j)
+                    right_j_r = p.predict(right_j)
 
-                    print("Can a perceptron tell the difference between a t and a j?")
-                    print("Activation function:", a.__name__)
+                    print("Can a deep_learning tell the difference between a t and a j?")
+                    print("Activation function:", activation.__name__)
                     print("Learning rate:", lr)
-                    print("Bias:", b)
+                    print("Bias:", p.b)
                     print("Epochs:", epochs)
                     print("t >= 0.5, j < 0.5")
                     print()

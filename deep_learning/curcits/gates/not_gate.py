@@ -1,4 +1,4 @@
-from perceptron.curcits.gates.gate import gate
+from deep_learning.curcits.gates.gate import gate
 
 
 def not_gate(x: float) -> float:

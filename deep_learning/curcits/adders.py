@@ -1,25 +1,25 @@
-from typing import List
+from typing import List, Tuple
 
-from perceptron.curcits.gates.and_gate import and_gate
-from perceptron.curcits.gates.not_gate import not_gate
-from perceptron.curcits.gates.or_gate import or_gate
+from deep_learning.curcits.gates.and_gate import and_gate
+from deep_learning.curcits.gates.not_gate import not_gate
+from deep_learning.curcits.gates.or_gate import or_gate
 
 
-def half_adder(a: float, b: float) -> (float, float):
+def half_adder(a: float, b: float) -> Tuple[float, float]:
     _sum = or_gate(and_gate(a, not_gate(b)), and_gate(not_gate(a), b))
     carry = and_gate(a, b)
     return _sum, carry
 
-def full_adder(a: float, b: float, cin: float) -> (float, float):
+def full_adder(a: float, b: float, cin: float) -> Tuple[float, float]:
     sum1, carry1 = half_adder(a, b)
     sum2, carry2 = half_adder(sum1, cin)
     carry = or_gate(carry1, carry2)
     return sum2, carry
 
-def one_bit_adder(a: float, b: float, cin: float = 0) -> (float, float):
+def one_bit_adder(a: float, b: float, cin: float = 0) -> Tuple[float, float]:
     return full_adder(a, b, cin)
 
-def four_bit_adder(a: List[float], b: List[float], cin: float = 0) -> (List[float], float):
+def four_bit_adder(a: List[float], b: List[float], cin: float = 0) -> Tuple[List[float], float]:
     if len(a) != 4 or len(b) != 4:
         raise ValueError("Inputs must be 4-bit lists")
 
