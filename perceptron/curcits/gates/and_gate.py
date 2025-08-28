@@ -1,4 +1,4 @@
-from curcits.gates.gate import gate, print_table
+from perceptron.curcits.gates.gate import gate, print_table
 
 
 def and_gate(x1: float, x2: float) -> float:

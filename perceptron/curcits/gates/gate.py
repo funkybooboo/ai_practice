@@ -1,7 +1,7 @@
 from typing import List, Callable
 
-from activation_functions import step_function
-from perceptron import perceptron
+from perceptron.activation_functions import step_function
+from perceptron.perceptron import perceptron
 
 
 def gate(xs: List[float], ws: List[float], b: float) -> float:

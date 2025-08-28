@@ -1,5 +1,7 @@
 import math
 
+import numpy as np
+
 
 def identity(n: float) -> float:
     return n
@@ -8,13 +10,11 @@ def identity(n: float) -> float:
 def step_function(n: float) -> float:
     return 0 if n <= 0 else 1
 
-# Sigmoid function returns a value between 0 and 1
-def sigmoid_function(n: float) -> float:
-    return 1 / (1 + math.exp(-n))
+def sigmoid_function(z: np.ndarray) -> np.ndarray:
+    return 1 / (1 + np.exp(-z))
 
-# ReLU (Rectified Linear Unit) returns 0 for negative inputs and the input itself for positive inputs
-def relu(n: float) -> float:
-    return max(0, n)
+def relu(z: np.ndarray) -> np.ndarray:
+    return np.maximum(0, z)
 
 # Leaky ReLU allows a small, non-zero gradient when the unit is not active
 def leaky_relu(n: float, alpha: float = 0.01) -> float:
@@ -59,3 +59,7 @@ def prelu(n: float, alpha: float) -> float:
 # Maxout is a piecewise linear function that can approximate any convex function
 def maxout(n: float, w: list, b: list, k: int) -> float:
     return max(w[i] * n + b[i] for i in range(k))
+
+def softmax_function(z: np.ndarray) -> np.ndarray:
+    exp_z = np.exp(z - np.max(z, axis=1, keepdims=True))  # stability
+    return exp_z / np.sum(exp_z, axis=1, keepdims=True)

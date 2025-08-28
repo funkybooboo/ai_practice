@@ -1,8 +1,8 @@
 from typing import List, Callable
 
-from activation_functions import step_function, identity, sigmoid_function, leaky_relu, relu, tanh_function, softplus, elu, gelu, selu
-from flatteners import flatten
-from perceptron import perceptron, train_perceptron
+from perceptron.activation_functions import step_function, identity, sigmoid_function, leaky_relu, relu, tanh_function, softplus, elu, gelu, selu
+from perceptron.flatteners import flatten
+from perceptron.perceptron import perceptron, train_perceptron
 
 
 def read_letter_file(file_path: str) -> List[List[float]]:
