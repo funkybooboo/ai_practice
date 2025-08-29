@@ -14,6 +14,11 @@ def sigmoid_function(n: float) -> float:
     return 1 / (1 + math.exp(-n))
 
 
+def sigmoid_derivative(z: float) -> float:
+    s = sigmoid_function(z)
+    return s * (1 - s)
+
+
 def relu(n: float) -> float:
     return max(0, n)
 

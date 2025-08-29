@@ -12,9 +12,9 @@ from deep_learning.normalizers import normalize_image
 TRAIN_SIZE: Optional[int] = None        # number of training samples to use, None for all
 TEST_SIZE: Optional[int] = None         # number of test samples to use, None for all
 NUM_EXAMPLES: int = 10                  # number of test images to display
-MLP_INPUT_SIZE: int = 784               # flattened 28x28 MNIST images
-MLP_HIDDEN_SIZES: List[int] = [20, 20]  # list of hidden layer sizes, can add more layers
-MLP_OUTPUT_SIZE: int = 10               # number of classes
+NN_INPUT_SIZE: int = 784               # flattened 28x28 MNIST images
+NN_HIDDEN_SIZES: List[int] = [20, 20]  # list of hidden layer sizes, can add more layers
+NN_OUTPUT_SIZE: int = 10               # number of classes
 LR: float = 0.1                         # learning rate
 EPOCHS: int = 5                         # number of epochs
 INPUT_PATH: str = './archive'           # folder path for MNIST data
@@ -51,9 +51,9 @@ def main() -> None:
 
     # Build MLP with dynamic hidden layers
     nn: NeuralNetwork = NeuralNetwork(
-        input_size=MLP_INPUT_SIZE,
-        hidden_sizes=MLP_HIDDEN_SIZES,
-        output_size=MLP_OUTPUT_SIZE,
+        input_size=NN_INPUT_SIZE,
+        hidden_sizes=NN_HIDDEN_SIZES,
+        output_size=NN_OUTPUT_SIZE,
         lr=LR
     )
 
