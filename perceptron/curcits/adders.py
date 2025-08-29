@@ -1,8 +1,8 @@
 from typing import List, Tuple
 
-from deep_learning.curcits.gates.and_gate import and_gate
-from deep_learning.curcits.gates.not_gate import not_gate
-from deep_learning.curcits.gates.or_gate import or_gate
+from perceptron.curcits.gates.and_gate import and_gate
+from perceptron.curcits.gates.not_gate import not_gate
+from perceptron.curcits.gates.or_gate import or_gate
 
 
 def half_adder(a: float, b: float) -> Tuple[float, float]:

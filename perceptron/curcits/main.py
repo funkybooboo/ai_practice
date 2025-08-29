@@ -1,4 +1,4 @@
-from deep_learning.curcits.adders import one_bit_adder, four_bit_adder
+from perceptron.curcits.adders import one_bit_adder, four_bit_adder
 
 if __name__ == "__main__":
     print("1-Bit Adder:")

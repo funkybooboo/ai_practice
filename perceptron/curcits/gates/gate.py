@@ -1,7 +1,7 @@
 from typing import List, Callable
 
-from deep_learning.activations import step
-from deep_learning.perceptron import Perceptron
+from perceptron.activations import step
+from perceptron.perceptron import Perceptron
 
 
 def gate(xs: List[float], ws: List[float], b: float) -> float:
