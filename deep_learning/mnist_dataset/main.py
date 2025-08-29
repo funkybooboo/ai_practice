@@ -98,6 +98,8 @@ def main() -> None:
     plt.tight_layout()
     plt.show()
 
+    nn.save("./model.pkl")
+
 
 if __name__ == "__main__":
     main()
