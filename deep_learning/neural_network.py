@@ -1,5 +1,6 @@
 import random
 from typing import List, Callable
+import pickle
 
 from deep_learning.neuron import Neuron
 
@@ -81,3 +82,17 @@ class NeuralNetwork:
             # Epoch accuracy
             accuracy = (correct / len(ys)) * 100
             print(f"Epoch {epoch + 1}/{epochs} Accuracy: {accuracy:.2f}%")
+
+    def save(self, filename: str) -> None:
+        """Save the neural network to a file using pickle"""
+        with open(filename, 'wb') as f:
+            pickle.dump(self, f)
+        print(f"Model saved to {filename}")
+
+    @staticmethod
+    def load_model(filename: str) -> 'NeuralNetwork':
+        """Load a neural network from a file using pickle"""
+        with open(filename, 'rb') as f:
+            model = pickle.load(f)
+        print(f"Model loaded from {filename}")
+        return model
