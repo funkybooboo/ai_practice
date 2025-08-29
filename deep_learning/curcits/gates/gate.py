@@ -6,7 +6,7 @@ from deep_learning.perceptron import Perceptron
 
 def gate(xs: List[float], ws: List[float], b: float) -> float:
     """Compute gate output using a Perceptron instance."""
-    p = Perceptron(input_size=len(xs), activation=step)
+    p = Perceptron(input_size=len(xs), activation=step, lr=1)
     p.ws = ws[:]  # set weights
     p.b = b       # set bias
     return p.predict(xs)

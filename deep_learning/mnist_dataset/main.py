@@ -1,5 +1,5 @@
-from deep_learning.activation_derivatives import sigmoid_derivative
-from deep_learning.activations import sigmoid
+from deep_learning.activation_derivatives import relu_derivative
+from deep_learning.activations import relu
 from deep_learning.flatteners import flatten
 from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
 from os.path import join
@@ -13,16 +13,15 @@ from deep_learning.normalizers import normalize_image
 # things to not really touch
 INPUT_PATH: str = './archive'
 IMAGE_SIZE: int = 28
-TRAIN_SIZE: Optional[int] = None
-TEST_SIZE: Optional[int] = None
 NN_OUTPUT_SIZE: int = 10
 
 # things to touch
-NN_HIDDEN_SIZES: List[int] = [128, 64]
+TRAIN_SIZE: Optional[int] = None
+TEST_SIZE: Optional[int] = None
+NN_HIDDEN_SIZES: List[int] = [20, 20]
 BATCH_SIZE: int = 32
-LR = 0.01
+LR = 2
 EPOCHS = 20
-
 
 def main() -> None:
     training_images_filepath: str = join(INPUT_PATH, 'train-images-idx3-ubyte/train-images-idx3-ubyte')
@@ -60,8 +59,8 @@ def main() -> None:
         input_size=NN_INPUT_SIZE,
         hidden_sizes=NN_HIDDEN_SIZES,
         output_size=NN_OUTPUT_SIZE,
-        activation=sigmoid,
-        activation_derivative=sigmoid_derivative,
+        activation=relu,
+        activation_derivative=relu_derivative,
         lr=LR,
         batch_size=BATCH_SIZE,
     )
