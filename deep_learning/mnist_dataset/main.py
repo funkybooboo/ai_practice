@@ -10,16 +10,18 @@ from typing import List, Optional
 from deep_learning.neural_network import NeuralNetwork
 from deep_learning.normalizers import normalize_image
 
+# things to not really touch
+INPUT_PATH: str = './archive'
+IMAGE_SIZE: int = 28
+TRAIN_SIZE: Optional[int] = None
+TEST_SIZE: Optional[int] = None
+NN_OUTPUT_SIZE: int = 10
 
-TRAIN_SIZE: Optional[int] = None        # number of training samples to use, None for all
-TEST_SIZE: Optional[int] = None         # number of test samples to use, None for all
-IMAGE_SIZE: int = 28                    # height/width of MNIST images
-NN_HIDDEN_SIZES: List[int] = [16, 16]  # list of hidden layer sizes, can add more layers
-NN_OUTPUT_SIZE: int = 10                # number of classes
-LR: float = 0.1                         # learning rate
-EPOCHS: int = 10                         # number of epochs
-BATCH_SIZE: int = 32                    # number of batches
-INPUT_PATH: str = './archive'           # folder path for MNIST data
+# things to touch
+NN_HIDDEN_SIZES: List[int] = [128, 64]
+BATCH_SIZE: int = 32
+LR = 0.01
+EPOCHS = 20
 
 
 def main() -> None:
