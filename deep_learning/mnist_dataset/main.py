@@ -8,19 +8,16 @@ import matplotlib.pyplot as plt
 from typing import List, Optional
 
 from deep_learning.neural_network import NeuralNetwork
-from deep_learning.normalizers import normalize_image
 
 # things to not really touch
 INPUT_PATH: str = './archive'
-IMAGE_SIZE: int = 28
-NN_OUTPUT_SIZE: int = 10
 
 # things to touch
 TRAIN_SIZE: Optional[int] = None
 TEST_SIZE: Optional[int] = None
-NN_HIDDEN_SIZES: List[int] = [20, 20]
-BATCH_SIZE: int = 32
-LR = 2
+NN_HIDDEN_SIZES: List[int] = [128, 32]
+BATCH_SIZE: int = 64
+LR = 0.001
 EPOCHS = 20
 
 def main() -> None:
@@ -47,18 +44,28 @@ def main() -> None:
         test_images_raw = test_images_raw[:TEST_SIZE]
         test_labels = test_labels[:TEST_SIZE]
 
-    # Flatten and normalize images
-    train_images_flat: List[List[float]] = [normalize_image(flatten(img)) for img in train_images_raw]
-    test_images_flat: List[List[float]] = [normalize_image(flatten(img)) for img in test_images_raw]
+    if len(train_labels) == 0 or \
+        len(test_labels) == 0 or \
+        len(train_images_raw) == 0 or \
+        len(train_images_raw[0]) == 0 or \
+        len(test_images_raw) == 0 or \
+        len(test_images_raw[0]) == 0:
+        print("No data to work with!")
+        return
 
-    # Dynamically calculate the input size (flattened image dimensions)
-    NN_INPUT_SIZE = IMAGE_SIZE * IMAGE_SIZE  # 28x28 MNIST images
+    # Flatten and normalize images
+    train_images_flat: List[List[float]] = [flatten(img) for img in train_images_raw]
+    test_images_flat: List[List[float]] = [flatten(img) for img in test_images_raw]
+
+    image_size: int = len(train_images_raw[0])
+    nn_input_size: int = len(train_images_flat[0])
+    nn_output_size: int = len(set(train_labels).union(set(test_labels)))
 
     # Build MLP with dynamic hidden layers
     nn: NeuralNetwork = NeuralNetwork(
-        input_size=NN_INPUT_SIZE,
+        input_size=nn_input_size,
         hidden_sizes=NN_HIDDEN_SIZES,
-        output_size=NN_OUTPUT_SIZE,
+        output_size=nn_output_size,
         activation=relu,
         activation_derivative=relu_derivative,
         lr=LR,
@@ -79,7 +86,7 @@ def main() -> None:
     plt.figure(figsize=(15, 5))
     for i, idx in enumerate(sample_indices):
         img_flat: List[float] = test_images_flat[idx]
-        img_2d: List[List[float]] = [img_flat[r * IMAGE_SIZE:(r + 1) * IMAGE_SIZE] for r in range(IMAGE_SIZE)]
+        img_2d: List[List[float]] = [img_flat[r * image_size:(r + 1) * image_size] for r in range(image_size)]
         true_label: float = test_labels[idx]
         pred_label: float = predictions[idx]
 

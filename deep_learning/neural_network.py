@@ -1,3 +1,4 @@
+import math
 import random
 from typing import List, Callable
 import pickle
@@ -60,6 +61,9 @@ class NeuralNetwork:
             random.shuffle(data)
             xss_shuffled, ys_shuffled = zip(*data)
 
+            total_cost: float = 0
+            cost_count: int = 0
+
             # train in mini-batches
             for start_idx in range(0, len(xss), self.batch_size):
                 end_idx = min(start_idx + self.batch_size, len(xss))
@@ -72,10 +76,20 @@ class NeuralNetwork:
                     target = [0.0] * len(outputs)
                     target[y] = 1.0
 
+                    cost: float = 0
+                    for o, t in zip(outputs, target):
+                        cost += math.pow(o - t, 2)
+                    total_cost += cost
+                    cost_count += 1
+
                     deltas = [o - t for o, t in zip(outputs, target)]
                     self._backward_propagate(deltas)
 
             print(f"Epoch {epoch + 1}/{epochs}")
+
+            average_cost: float = total_cost / cost_count
+            print(f"\tAverage Cost: {average_cost:.2f}")
+
             preds = self.predict(xss)
             accuracy = sum(p == y for p, y in zip(preds, ys)) / len(ys) * 100
             print(f"\tAccuracy: {accuracy:.2f}%")
