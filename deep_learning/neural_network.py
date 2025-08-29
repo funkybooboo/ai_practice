@@ -77,12 +77,14 @@ class NeuralNetwork:
                     target[y] = 1.0
 
                     cost: float = 0
+                    deltas: List[float] = []
                     for o, t in zip(outputs, target):
-                        cost += math.pow(o - t, 2)
+                        delta: float = o - t
+                        cost += math.pow(delta, 2)
+                        deltas.append(delta)
                     total_cost += cost
                     cost_count += 1
 
-                    deltas = [o - t for o, t in zip(outputs, target)]
                     self._backward_propagate(deltas)
 
             print(f"Epoch {epoch + 1}/{epochs}")
