@@ -2,21 +2,12 @@ import math
 from typing import List
 
 
-def identity(n: float) -> float:
-    return n
-
-
-def step_function(n: float) -> float:
+def step(n: float) -> float:
     return 0 if n <= 0 else 1
 
 
-def sigmoid_function(n: float) -> float:
+def sigmoid(n: float) -> float:
     return 1 / (1 + math.exp(-n))
-
-
-def sigmoid_derivative(z: float) -> float:
-    s = sigmoid_function(z)
-    return s * (1 - s)
 
 
 def relu(n: float) -> float:
@@ -27,7 +18,7 @@ def leaky_relu(n: float, alpha: float = 0.01) -> float:
     return max(alpha * n, n)
 
 
-def tanh_function(n: float) -> float:
+def tanh(n: float) -> float:
     return (math.exp(n) - math.exp(-n)) / (math.exp(n) + math.exp(-n))
 
 
@@ -61,7 +52,7 @@ def maxout(n: float, w: List[float], b: List[float], k: int) -> float:
     return max(w[i] * n + b[i] for i in range(k))
 
 
-def softmax_function(z: List[float]) -> List[float]:
+def softmax(z: List[float]) -> List[float]:
     max_z = max(z)  # stability
     exp_z = [math.exp(val - max_z) for val in z]
     sum_exp = sum(exp_z)

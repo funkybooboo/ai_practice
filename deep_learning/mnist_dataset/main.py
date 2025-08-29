@@ -1,3 +1,5 @@
+from deep_learning.activation_derivatives import sigmoid_derivative
+from deep_learning.activations import sigmoid
 from deep_learning.flatteners import flatten
 from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
 from os.path import join
@@ -9,16 +11,15 @@ from deep_learning.neural_network import NeuralNetwork
 from deep_learning.normalizers import normalize_image
 
 
-TRAIN_SIZE: Optional[int] = None        # number of training samples to use, None for all
-TEST_SIZE: Optional[int] = None         # number of test samples to use, None for all
-NUM_EXAMPLES: int = 10                  # number of test images to display
-NN_INPUT_SIZE: int = 784               # flattened 28x28 MNIST images
-NN_HIDDEN_SIZES: List[int] = [20, 20]  # list of hidden layer sizes, can add more layers
-NN_OUTPUT_SIZE: int = 10               # number of classes
+TRAIN_SIZE: Optional[int] = 5000        # number of training samples to use, None for all
+TEST_SIZE: Optional[int] = 1000         # number of test samples to use, None for all
+IMAGE_SIZE: int = 28                    # height/width of MNIST images
+NN_HIDDEN_SIZES: List[int] = [128, 64]  # list of hidden layer sizes, can add more layers
+NN_OUTPUT_SIZE: int = 10                # number of classes
 LR: float = 0.1                         # learning rate
 EPOCHS: int = 5                         # number of epochs
+BATCH_SIZE: int = 32                    # number of batches
 INPUT_PATH: str = './archive'           # folder path for MNIST data
-IMAGE_SIZE: int = 28                    # height/width of MNIST images
 
 
 def main() -> None:
@@ -49,12 +50,18 @@ def main() -> None:
     train_images_flat: List[List[float]] = [normalize_image(flatten(img)) for img in train_images_raw]
     test_images_flat: List[List[float]] = [normalize_image(flatten(img)) for img in test_images_raw]
 
+    # Dynamically calculate the input size (flattened image dimensions)
+    NN_INPUT_SIZE = IMAGE_SIZE * IMAGE_SIZE  # 28x28 MNIST images
+
     # Build MLP with dynamic hidden layers
     nn: NeuralNetwork = NeuralNetwork(
         input_size=NN_INPUT_SIZE,
         hidden_sizes=NN_HIDDEN_SIZES,
         output_size=NN_OUTPUT_SIZE,
-        lr=LR
+        activation=sigmoid,
+        activation_derivative=sigmoid_derivative,
+        lr=LR,
+        batch_size=BATCH_SIZE,
     )
 
     # Train
@@ -63,14 +70,15 @@ def main() -> None:
     # Evaluate
     predictions: List[float] = nn.predict(test_images_flat)
     accuracy: float = sum(p == t for p, t in zip(predictions, test_labels)) / len(test_labels)
-    print(f"Test accuracy: {accuracy:.2%}")
+    print(f"Test Accuracy: {accuracy:.2%}")
 
     # Display some random test images
-    sample_indices: List[int] = random.sample(range(len(test_images_flat)), NUM_EXAMPLES)
+    num_examples: int = 10
+    sample_indices: List[int] = random.sample(range(len(test_images_flat)), num_examples)
     plt.figure(figsize=(15, 5))
     for i, idx in enumerate(sample_indices):
         img_flat: List[float] = test_images_flat[idx]
-        img_2d: List[List[float]] = [img_flat[r*IMAGE_SIZE:(r+1)*IMAGE_SIZE] for r in range(IMAGE_SIZE)]
+        img_2d: List[List[float]] = [img_flat[r * IMAGE_SIZE:(r + 1) * IMAGE_SIZE] for r in range(IMAGE_SIZE)]
         true_label: float = test_labels[idx]
         pred_label: float = predictions[idx]
 

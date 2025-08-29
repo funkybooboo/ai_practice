@@ -1,11 +1,11 @@
 from typing import List, Callable
 
-from deep_learning.activation_functions import (
-    step_function, identity, sigmoid_function, leaky_relu, relu, tanh_function,
+from deep_learning.activations import (
+    step, sigmoid, leaky_relu, relu, tanh,
     softplus, elu, gelu, selu
 )
 from deep_learning.flatteners import flatten
-from deep_learning.neuron import Neuron
+from deep_learning.perceptron import Perceptron
 
 
 def read_letter_file(file_path: str) -> List[List[float]]:
@@ -31,8 +31,8 @@ def main():
     right_j: List[float] = flatten(read_letter_file('./j/right_j.txt'))
 
     activations: List[Callable[[float], float]] = [
-        identity, step_function, sigmoid_function, relu, leaky_relu,
-        tanh_function, elu, softplus, gelu, selu
+        step, sigmoid, relu, leaky_relu,
+        tanh, elu, softplus, gelu, selu
     ]
 
     learning_rates: List[float] = [0.1, 1, 10]
@@ -44,7 +44,7 @@ def main():
             for bias in biases:
                 for epochs in epochs_list:
                     # Initialize Perceptron
-                    p = Neuron(input_size=len(left_t), activation=activation, lr=lr)
+                    p = Perceptron(input_size=len(left_t), activation=activation, lr=lr)
                     p.b = bias  # set initial bias
 
                     # Train deep_learning

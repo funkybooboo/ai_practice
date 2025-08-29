@@ -51,7 +51,7 @@ class MnistDataloader:
 
     def load_data(
         self
-    ) -> Tuple[Tuple[List[List[List[float]]], List[int]], Tuple[List[List[List[float]]], List[float]]]:
+    ) -> Tuple[Tuple[List[List[List[float]]], List[int]], Tuple[List[List[List[float]]], List[int]]]:
         x_train, y_train = self.read_images_labels(self.training_images_filepath, self.training_labels_filepath)
         x_test, y_test = self.read_images_labels(self.test_images_filepath, self.test_labels_filepath)
         return (x_train, y_train), (x_test, y_test)

@@ -1,12 +1,12 @@
 from typing import List, Callable
 
-from deep_learning.activation_functions import step_function
-from deep_learning.neuron import Neuron
+from deep_learning.activations import step
+from deep_learning.perceptron import Perceptron
 
 
 def gate(xs: List[float], ws: List[float], b: float) -> float:
     """Compute gate output using a Perceptron instance."""
-    p = Neuron(input_size=len(xs), activation=step_function)
+    p = Perceptron(input_size=len(xs), activation=step)
     p.ws = ws[:]  # set weights
     p.b = b       # set bias
     return p.predict(xs)

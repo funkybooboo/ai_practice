@@ -1,26 +1,27 @@
-from collections.abc import Callable
-from typing import List
 import random
+from typing import Callable, List
 
 
 class Neuron:
-    def __init__(self, input_size: int, activation: Callable[[float], float], lr: float = 0.01) -> None:
-        random.seed(42)
-        self.ws: List[float] = [random.gauss(0, 0.1) for _ in range(input_size)]
-        self.b: float = 0.0
-        self.activation: Callable[[float], float] = activation
-        self.lr: float = lr
+    def __init__(self, input_size: int, activation: Callable[[float], float], activation_derivative: Callable[[float], float], lr: float):
+        self.ws = [random.uniform(-0.5,0.5) for _ in range(input_size)]
+        self.b = random.uniform(-0.5,0.5)
+        self.activation = activation
+        self.activation_derivative = activation_derivative
+        self.lr = lr
+        self.last_input = []
+        self.last_output = 0
 
-    def predict(self, xs: List[float]) -> float:
-        """Compute the output of the deep_learning for given inputs."""
-        s = sum(x * w for x, w in zip(xs, self.ws)) + self.b
-        return self.activation(s)
+    def forward(self, xs: List[float]) -> float:
+        self.last_input = xs
+        s = sum(x*w for x,w in zip(xs,self.ws)) + self.b
+        self.last_output = self.activation(s)
+        return self.last_output
 
-    def fit(self, xss: List[List[float]], ys: List[float], epochs: int = 1) -> None:
-        """Train the deep_learning using simple deep_learning learning rule."""
-        for _ in range(epochs):
-            for xs, y in zip(xss, ys):
-                pred = self.predict(xs)
-                error = y - pred
-                self.ws = [w + self.lr * error * x for w, x in zip(self.ws, xs)]
-                self.b += self.lr * error
+    def backward(self, delta: float):
+        # delta = error * f'(s)
+        deriv = self.activation_derivative(self.last_output)
+        for i in range(len(self.ws)):
+            self.ws[i] += self.lr * delta * deriv * self.last_input[i]
+        self.b += self.lr * delta * deriv
+        return [delta * deriv * w for w in self.ws]  # gradient for previous layer

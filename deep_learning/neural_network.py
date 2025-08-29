@@ -1,90 +1,83 @@
-from typing import List, Optional
-from deep_learning.activation_functions import sigmoid_function, sigmoid_derivative
-from deep_learning.list_utils import argmax_2d
+import random
+from typing import List, Callable
+
 from deep_learning.neuron import Neuron
 
-
 class NeuralNetwork:
-    def __init__(self, input_size: int, hidden_sizes: List[int], output_size: int, lr: float = 0.1) -> None:
-        """
-        Build a feedforward neural network with any number of hidden layers.
-        :param input_size: number of input features
-        :param hidden_sizes: list of hidden layer sizes
-        :param output_size: number of output neurons/classes
-        :param lr: learning rate
-        """
-        self.lr = lr
-
-        # Build layers
+    def __init__(self,
+         input_size: int,
+         hidden_sizes: List[int],
+         output_size: int,
+         activation: Callable[[float], float],
+         activation_derivative: Callable[[float], float],
+         lr: float,
+         batch_size: int,
+     ):
         self.layers: List[List[Neuron]] = []
-        prev_size = input_size
-        for h_size in hidden_sizes:
-            self.layers.append([Neuron(prev_size, sigmoid_function, lr) for _ in range(h_size)])
-            prev_size = h_size
+        self.input_size: int = input_size
+        self.batch_size = batch_size  # Store batch size
 
-        # Output layer (linear for softmax)
-        self.layers.append([Neuron(prev_size, lambda z: z, lr) for _ in range(output_size)])
+        sizes: List[int] = [input_size] + hidden_sizes + [output_size]
+        for i in range(1, len(sizes)):
+            last_size = sizes[i - 1]
+            layer = [Neuron(last_size, activation, activation_derivative, lr) for _ in range(sizes[i])]
+            self.layers.append(layer)
 
-    @staticmethod
-    def _one_hot(y: List[int], num_classes: int) -> List[List[float]]:
-        return [[1.0 if i == label else 0.0 for i in range(num_classes)] for label in y]
-
-    def _forward(self, x: List[float]) -> List[List[float]]:
-        """
-        Forward pass for a single input sample.
-        Returns activations of all layers including output.
-        """
-        activations = [x]
+    def _forward_propagate(self, xs: List[float]) -> List[float]:
+        """Run one input through the network"""
         for layer in self.layers:
-            x = [neuron.predict(activations[-1]) for neuron in layer]
-            activations.append(x)
-        return activations
+            xs = [neuron.forward(xs) for neuron in layer]
+        return xs
 
-    def _backpropagate(self, activations: List[List[float]], y_true: List[float]) -> None:
-        deltas: List[Optional[List[float]]] = [None] * len(self.layers)
-
-        # Output layer delta
-        output_activation = activations[-1]
-        deltas[-1] = [t - o for t, o in zip(y_true, output_activation)]
-
-        # Hidden layers
-        for l in reversed(range(len(self.layers) - 1)):
-            layer = self.layers[l]
-            next_layer = self.layers[l + 1]
-            deltas_l = []
-            for i, neuron in enumerate(layer):
-                delta_sum = sum(deltas[l + 1][j] * next_neuron.ws[i] for j, next_neuron in enumerate(next_layer))
-                delta_i = delta_sum * sigmoid_derivative(activations[l + 1][i])
-                deltas_l.append(delta_i)
-            deltas[l] = deltas_l
-
-        # Update weights
-        for l, layer in enumerate(self.layers):
-            inputs = activations[l]
+    def _backward_propagate(self, deltas: List[float]) -> None:
+        """Run backpropagation step and update weights"""
+        for layer in reversed(self.layers):
+            new_deltas = []
             for j, neuron in enumerate(layer):
-                neuron.fit([inputs], [deltas[l][j]], epochs=1)
+                grads = neuron.backward(deltas[j])   # grads: contribution to previous layer
+                if not new_deltas:
+                    new_deltas = [0.0] * len(grads)
+                for k, g in enumerate(grads):
+                    new_deltas[k] += g
+            deltas = new_deltas   # pass error backward
 
     def predict(self, xss: List[List[float]]) -> List[int]:
-        """
-        Predict labels for multiple inputs.
-        """
-        all_outputs = []
-        for x in xss:
-            out = self._forward(x)[-1]
-            all_outputs.append(out)
-        return argmax_2d(all_outputs)
+        """Predict class labels for a batch of inputs"""
+        results = []
+        for xs in xss:
+            outputs = self._forward_propagate(xs)
+            pred = outputs.index(max(outputs))  # argmax
+            results.append(pred)
+        return results
 
-    def fit(self, xss: List[List[float]], ys: List[int], epochs: int) -> None:
-        """
-        Train the neural network using full backpropagation.
-        """
-        y_onehot = self._one_hot(ys, len(self.layers[-1]))
-
+    def fit(self, xss: List[List[float]], ys: List[int], epochs: int):
+        """Train the network using backpropagation"""
         for epoch in range(epochs):
-            for x, y_true in zip(xss, y_onehot):
-                activations = self._forward(x)
-                self._backpropagate(activations, y_true)
+            correct = 0
 
-            preds = self.predict(xss)
-            acc = sum(p == t for p, t in zip(preds, ys)) / len(ys)
-            print(f"Epoch {epoch+1}/{epochs} - Acc: {acc:.2%}")
+            # Shuffle data at the start of each epoch
+            data = list(zip(xss, ys))
+            random.shuffle(data)
+            xss_shuffled, ys_shuffled = zip(*data)
+
+            # Mini-batch training
+            for start_idx in range(0, len(xss), self.batch_size):
+                end_idx = min(start_idx + self.batch_size, len(xss))
+                batch_xs = xss_shuffled[start_idx:end_idx]
+                batch_ys = ys_shuffled[start_idx:end_idx]
+
+                # Train on mini-batch
+                for xs, y in zip(batch_xs, batch_ys):
+                    outputs = self._forward_propagate(xs)
+                    pred = outputs.index(max(outputs))
+                    if pred == y:
+                        correct += 1
+
+                    target = [0.0] * len(outputs)
+                    target[y] = 1.0
+                    deltas = [t - o for t, o in zip(target, outputs)]
+                    self._backward_propagate(deltas)
+
+            # Epoch accuracy
+            accuracy = (correct / len(ys)) * 100
+            print(f"Epoch {epoch + 1}/{epochs} Accuracy: {accuracy:.2f}%")
