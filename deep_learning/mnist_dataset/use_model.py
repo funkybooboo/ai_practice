@@ -1,3 +1,4 @@
+import os
 import random
 from os.path import join
 from typing import List, Optional
@@ -8,8 +9,23 @@ from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
 from deep_learning.neural_network import NeuralNetwork
 
 INPUT_PATH: str = './archive'
-MODEL_PATH: str = './model17565163193815045.pkl'
+MODEL_PATH: Optional[str] = None
 TEST_SIZE: Optional[int] = 1000
+
+
+def get_most_recent_model_path(start_path: str) -> str:
+    # List all files in the given directory
+    files = [f for f in os.listdir(start_path) if f.endswith('.pkl')]
+    if not files:
+        raise FileNotFoundError(f"No .pkl files found in {start_path}")
+
+    # Sort files based on the timestamp in the filename (numbers after 'model')
+    files.sort(key=lambda f: int(f.split('model')[1].split('.pkl')[0]), reverse=True)
+
+    # Return the most recent file
+    most_recent_file = files[0]
+    return join(start_path, most_recent_file)
+
 
 def main() -> None:
     training_images_filepath: str = join(INPUT_PATH, 'train-images-idx3-ubyte/train-images-idx3-ubyte')
@@ -32,8 +48,11 @@ def main() -> None:
 
     test_images_flat: List[List[float]] = [flatten(images) for images in test_images_raw]
 
-    # Load saved model
-    nn = NeuralNetwork.load(MODEL_PATH)
+    model_path = MODEL_PATH
+    if model_path is None:
+        model_path = get_most_recent_model_path('./')
+
+    nn = NeuralNetwork.load(model_path)
 
     # Predict
     predictions: List[int] = nn.predict(test_images_flat)
