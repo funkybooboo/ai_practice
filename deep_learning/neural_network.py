@@ -103,7 +103,7 @@ class NeuralNetwork:
         print(f"Model saved to {filename}")
 
     @staticmethod
-    def load_model(filename: str) -> 'NeuralNetwork':
+    def load(filename: str) -> 'NeuralNetwork':
         """Load a neural network from a file using pickle"""
         with open(filename, 'rb') as f:
             model = pickle.load(f)

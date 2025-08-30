@@ -1,24 +1,26 @@
+import time
+from os.path import join
+import random
+from typing import List, Optional
+
 from deep_learning.activation_derivatives import relu_derivative
 from deep_learning.activations import relu
 from deep_learning.flatteners import flatten
 from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
-from os.path import join
-import random
-import matplotlib.pyplot as plt
-from typing import List, Optional
-
 from deep_learning.neural_network import NeuralNetwork
+
+import matplotlib.pyplot as plt
 
 # things to not really touch
 INPUT_PATH: str = './archive'
 
 # things to touch
-TRAIN_SIZE: Optional[int] = None
-TEST_SIZE: Optional[int] = None
-NN_HIDDEN_SIZES: List[int] = [128, 32]
-BATCH_SIZE: int = 64
+TRAIN_SIZE: Optional[int] = 10000
+TEST_SIZE: Optional[int] = 2000
+NN_HIDDEN_SIZES: List[int] = [16, 16]
+BATCH_SIZE: int = 50
 LR = 0.001
-EPOCHS = 20
+EPOCHS = 10
 
 def main() -> None:
     training_images_filepath: str = join(INPUT_PATH, 'train-images-idx3-ubyte/train-images-idx3-ubyte')
@@ -98,7 +100,7 @@ def main() -> None:
     plt.tight_layout()
     plt.show()
 
-    nn.save("./model.pkl")
+    nn.save(f"./model{str(time.time()).replace('.', '')}.pkl")
 
 
 if __name__ == "__main__":
