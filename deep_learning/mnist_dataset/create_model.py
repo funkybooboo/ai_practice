@@ -11,16 +11,13 @@ from deep_learning.neural_network import NeuralNetwork
 
 import matplotlib.pyplot as plt
 
-# things to not really touch
 INPUT_PATH: str = './archive'
-
-# things to touch
-TRAIN_SIZE: Optional[int] = 10000
-TEST_SIZE: Optional[int] = 2000
+TRAIN_SIZE: Optional[int] = None
+TEST_SIZE: Optional[int] = None
 NN_HIDDEN_SIZES: List[int] = [16, 16]
-BATCH_SIZE: int = 50
-LR = 0.001
-EPOCHS = 10
+BATCH_SIZE: int = 25
+LEARNING_RATE: float = 0.001
+EPOCHS: int = 10
 
 def main() -> None:
     training_images_filepath: str = join(INPUT_PATH, 'train-images-idx3-ubyte/train-images-idx3-ubyte')
@@ -35,7 +32,6 @@ def main() -> None:
         test_labels_filepath
     )
 
-    # Load raw image data
     (train_images_raw, train_labels), (test_images_raw, test_labels) = mnist_dataloader.load_data()
 
     # Optionally reduce dataset sizes
@@ -55,22 +51,20 @@ def main() -> None:
         print("No data to work with!")
         return
 
-    # Flatten and normalize images
-    train_images_flat: List[List[float]] = [flatten(img) for img in train_images_raw]
-    test_images_flat: List[List[float]] = [flatten(img) for img in test_images_raw]
+    train_images_flat: List[List[float]] = [flatten(images) for images in train_images_raw]
+    test_images_flat: List[List[float]] = [flatten(images) for images in test_images_raw]
 
     image_size: int = len(train_images_raw[0])
     nn_input_size: int = len(train_images_flat[0])
     nn_output_size: int = len(set(train_labels).union(set(test_labels)))
 
-    # Build MLP with dynamic hidden layers
     nn: NeuralNetwork = NeuralNetwork(
         input_size=nn_input_size,
         hidden_sizes=NN_HIDDEN_SIZES,
         output_size=nn_output_size,
         activation=relu,
         activation_derivative=relu_derivative,
-        lr=LR,
+        learning_rate=LEARNING_RATE,
         batch_size=BATCH_SIZE,
     )
 
@@ -100,6 +94,7 @@ def main() -> None:
     plt.tight_layout()
     plt.show()
 
+    # Save the model for later use
     nn.save(f"./model{str(time.time()).replace('.', '')}.pkl")
 
 

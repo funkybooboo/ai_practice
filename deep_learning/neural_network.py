@@ -1,6 +1,6 @@
 import math
 import random
-from typing import List, Callable
+from typing import List, Callable, Tuple, Generator
 import pickle
 
 from deep_learning.neuron import Neuron
@@ -8,98 +8,116 @@ from deep_learning.neuron import Neuron
 
 class NeuralNetwork:
     def __init__(self,
-         input_size: int,
-         hidden_sizes: List[int],
-         output_size: int,
-         activation: Callable[[float], float],
-         activation_derivative: Callable[[float], float],
-         lr: float,
-         batch_size: int,
-     ):
-        self.input_size: int = input_size
-        self.batch_size = batch_size  # Store batch size
+        input_size: int,
+        hidden_sizes: List[int],
+        output_size: int,
+        activation: Callable[[float], float],
+        activation_derivative: Callable[[float], float],
+        learning_rate: float,
+        batch_size: int,
+    ):
+        self.features_size: int = input_size
+        self.batch_size = batch_size
 
         self.layers: List[List[Neuron]] = []
         sizes: List[int] = [input_size] + hidden_sizes + [output_size]
         for i in range(1, len(sizes)):
             last_size = sizes[i - 1]
-            is_output = (i == len(sizes) - 1)
-            layer = [Neuron(last_size, activation, activation_derivative, lr, is_output=is_output)
+            is_output_neuron = (i == len(sizes) - 1)
+            layer: List[Neuron] = [Neuron(last_size, activation, activation_derivative, learning_rate, is_output_neuron=is_output_neuron)
                      for _ in range(sizes[i])]
             self.layers.append(layer)
 
-    def _forward_propagate(self, xs: List[float]) -> List[float]:
-        for i, layer in enumerate(self.layers):
-            xs = [neuron.forward(xs) for neuron in layer]
-        return xs
+    def predict(self, features_table: List[List[float]]) -> List[int]:
+        """Predict class labels for a batch of inputs"""
+        predictions = []
+        for features in features_table:
+            outputs = self._forward_propagate(features)
+            prediction = outputs.index(max(outputs))  # argmax
+            predictions.append(prediction)
+        return predictions
 
-    def _backward_propagate(self, deltas: List[float]) -> None:
+    def fit(self, features_table: List[List[float]], labels: List[int], epochs: int):
+        for epoch in range(epochs):
+            features_table, labels = self._shuffle_data(features_table, labels)
+
+            total_loss: float = 0
+            processed_count: int = 0
+
+            for features_batch, labels_batch in self._mini_batches(features_table, labels):
+                for features, label in zip(features_batch, labels_batch):
+                    outputs = self._forward_propagate(features)
+
+                    loss, error_deltas = self._compute_loss_and_error_deltas(outputs, label)
+
+                    total_loss += loss
+                    processed_count += 1
+
+                    self._backward_propagate(error_deltas)
+
+            self._log_epoch_stats(epoch, epochs, total_loss, processed_count, features_table, labels)
+
+    def _forward_propagate(self, features: List[float]) -> List[float]:
+        for i, layer in enumerate(self.layers):
+            features: List[float] = [neuron.forward(features) for neuron in layer]
+        return features
+
+    def _backward_propagate(self, error_deltas: List[float]) -> None:
         """Run backpropagation step and update weights"""
         for layer in reversed(self.layers):
-            new_deltas = []
+            next_error_deltas = []
             for j, neuron in enumerate(layer):
-                grads = neuron.backward(deltas[j])  # grads: contribution to previous layer
-                if not new_deltas:
-                    new_deltas = [0.0] * len(grads)
-                for k, g in enumerate(grads):
-                    new_deltas[k] += g
-            deltas = new_deltas
+                gradients = neuron.backward(error_deltas[j])  # gradients: contribution to previous layer
+                if not next_error_deltas:
+                    next_error_deltas = [0.0] * len(gradients)
+                for k, gradiant in enumerate(gradients):
+                    next_error_deltas[k] += gradiant
+            error_deltas = next_error_deltas
 
-    def predict(self, xss: List[List[float]]) -> List[int]:
-        """Predict class labels for a batch of inputs"""
-        results = []
-        for xs in xss:
-            outputs = self._forward_propagate(xs)
-            pred = outputs.index(max(outputs))  # argmax
-            results.append(pred)
-        return results
+    @staticmethod
+    def _shuffle_data(features_table: List[List[float]], labels: List[int]) -> Tuple[List[List[float]], List[int]]:
+        """Shuffle the features and labels together"""
+        dataset: List[Tuple[List[float], int]] = list(zip(features_table, labels))
+        random.shuffle(dataset)
+        randomized_features_table, randomized_labels = zip(*dataset) # the features and labels indexes still match
+        return randomized_features_table, randomized_labels
 
-    def fit(self, xss: List[List[float]], ys: List[int], epochs: int):
-        for epoch in range(epochs):
-            # shuffle data
-            data = list(zip(xss, ys))
-            random.shuffle(data)
-            xss_shuffled, ys_shuffled = zip(*data)
+    def _mini_batches(self, features_table: List[List[float]], labels: List[int]) -> Generator[tuple[list[list[float]], list[int]], None, None]:
+        """Generate mini-batches from the dataset"""
+        for start_index in range(0, len(features_table), self.batch_size):
+            end_index = min(start_index + self.batch_size, len(features_table))
+            yield features_table[start_index:end_index], labels[start_index:end_index]
 
-            total_cost: float = 0
-            cost_count: int = 0
+    @staticmethod
+    def _compute_loss_and_error_deltas(outputs: List[float], label: int) -> Tuple[float, List[float]]:
+        """Compute loss and error_deltas for backpropagation"""
+        targets = [0.0] * len(outputs)
+        targets[label] = 1.0
 
-            # train in mini-batches
-            for start_idx in range(0, len(xss), self.batch_size):
-                end_idx = min(start_idx + self.batch_size, len(xss))
-                batch_xs = xss_shuffled[start_idx:end_idx]
-                batch_ys = ys_shuffled[start_idx:end_idx]
+        loss = 0
+        error_deltas = []
+        for output, target in zip(outputs, targets):
+            error_delta = output - target
+            loss += math.pow(error_delta, 2)
+            error_deltas.append(error_delta)
 
-                for xs, y in zip(batch_xs, batch_ys):
-                    outputs = self._forward_propagate(xs)
+        return loss, error_deltas
 
-                    target = [0.0] * len(outputs)
-                    target[y] = 1.0
+    def _log_epoch_stats(self, epoch: int, epochs: int, total_loss: float, processed_count: int,
+                         features_table: List[List[float]], labels: List[int]):
+        """Log the epoch stats including loss and accuracy"""
+        print(f"Epoch {epoch + 1}/{epochs}")
+        average_loss = total_loss / processed_count
+        print(f"\tAverage Loss: {average_loss:.2f}")
 
-                    cost: float = 0
-                    deltas: List[float] = []
-                    for o, t in zip(outputs, target):
-                        delta: float = o - t
-                        cost += math.pow(delta, 2)
-                        deltas.append(delta)
-                    total_cost += cost
-                    cost_count += 1
-
-                    self._backward_propagate(deltas)
-
-            print(f"Epoch {epoch + 1}/{epochs}")
-
-            average_cost: float = total_cost / cost_count
-            print(f"\tAverage Cost: {average_cost:.2f}")
-
-            preds = self.predict(xss)
-            accuracy = sum(p == y for p, y in zip(preds, ys)) / len(ys) * 100
-            print(f"\tAccuracy: {accuracy:.2f}%")
+        predictions = self.predict(features_table)
+        accuracy = sum(p == y for p, y in zip(predictions, labels)) / len(labels) * 100
+        print(f"\tAccuracy: {accuracy:.2f}%")
 
     def save(self, filename: str) -> None:
         """Save the neural network to a file using pickle"""
         with open(filename, 'wb') as f:
-            pickle.dump(self, f)
+            pickle.dump(self, f) # type: ignore
         print(f"Model saved to {filename}")
 
     @staticmethod

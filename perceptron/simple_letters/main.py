@@ -44,8 +44,8 @@ def main():
             for bias in biases:
                 for epochs in epochs_list:
                     # Initialize Perceptron
-                    p = Perceptron(input_size=len(left_t), activation=activation, lr=lr)
-                    p.b = bias  # set initial bias
+                    p = Perceptron(input_size=len(left_t), activation=activation, learning_rate=lr)
+                    p.bias = bias  # set initial bias
 
                     # Train deep_learning
                     xss = [left_t, right_t, left_j, right_j]
@@ -61,7 +61,7 @@ def main():
                     print("Can a deep_learning tell the difference between a t and a j?")
                     print("Activation function:", activation.__name__)
                     print("Learning rate:", lr)
-                    print("Bias:", p.b)
+                    print("Bias:", p.bias)
                     print("Epochs:", epochs)
                     print("t >= 0.5, j < 0.5")
                     print()

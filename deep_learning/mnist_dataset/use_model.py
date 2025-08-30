@@ -7,19 +7,16 @@ from deep_learning.flatteners import flatten
 from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
 from deep_learning.neural_network import NeuralNetwork
 
-# Config
 INPUT_PATH: str = './archive'
 MODEL_PATH: str = './model17565163193815045.pkl'
 TEST_SIZE: Optional[int] = 1000
 
 def main() -> None:
-    # File paths
     training_images_filepath: str = join(INPUT_PATH, 'train-images-idx3-ubyte/train-images-idx3-ubyte')
     training_labels_filepath: str = join(INPUT_PATH, 'train-labels-idx1-ubyte/train-labels-idx1-ubyte')
     test_images_filepath: str = join(INPUT_PATH, 't10k-images-idx3-ubyte/t10k-images-idx3-ubyte')
     test_labels_filepath: str = join(INPUT_PATH, 't10k-labels-idx1-ubyte/t10k-labels-idx1-ubyte')
 
-    # Load MNIST data
     mnist_dataloader = MnistDataloader(
         training_images_filepath,
         training_labels_filepath,
@@ -33,8 +30,7 @@ def main() -> None:
         test_images_raw = test_images_raw[:TEST_SIZE]
         test_labels = test_labels[:TEST_SIZE]
 
-    # Flatten and normalize images
-    test_images_flat: List[List[float]] = [flatten(img) for img in test_images_raw]
+    test_images_flat: List[List[float]] = [flatten(images) for images in test_images_raw]
 
     # Load saved model
     nn = NeuralNetwork.load(MODEL_PATH)

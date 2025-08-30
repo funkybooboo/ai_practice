@@ -1,32 +1,47 @@
 from typing import List, Tuple
-
-from perceptron.curcits.gates.and_gate import and_gate
-from perceptron.curcits.gates.not_gate import not_gate
-from perceptron.curcits.gates.or_gate import or_gate
+from perceptron.curcits.gates import XOR, AND, OR
 
 
-def half_adder(a: float, b: float) -> Tuple[float, float]:
-    _sum = or_gate(and_gate(a, not_gate(b)), and_gate(not_gate(a), b))
-    carry = and_gate(a, b)
-    return _sum, carry
+def half_adder(x: int, y: int) -> Tuple[int, int]:
+    """Half-adder built from gates. Returns (sum, carry)."""
+    return XOR(x, y), AND(x, y)
 
-def full_adder(a: float, b: float, cin: float) -> Tuple[float, float]:
-    sum1, carry1 = half_adder(a, b)
-    sum2, carry2 = half_adder(sum1, cin)
-    carry = or_gate(carry1, carry2)
-    return sum2, carry
 
-def one_bit_adder(a: float, b: float, cin: float = 0) -> Tuple[float, float]:
-    return full_adder(a, b, cin)
+def full_adder(x: int, y: int, carry_in: int) -> Tuple[int, int]:
+    """Full-adder built from half-adders and OR. Returns (sum, carry_out)."""
+    s1, c1 = half_adder(x, y)
+    s2, c2 = half_adder(s1, carry_in)
+    carry_out = OR(c1, c2)
+    return s2, carry_out
 
-def four_bit_adder(a: List[float], b: List[float], cin: float = 0) -> Tuple[List[float], float]:
-    if len(a) != 4 or len(b) != 4:
-        raise ValueError("Inputs must be 4-bit lists")
 
-    sum_bits = []
-    carry = cin
-    for i in range(4):
-        sum_bit, carry = one_bit_adder(a[i], b[i], carry)
-        sum_bits.append(sum_bit)
+def add_binary(a: List[int], b: List[int]) -> List[int]:
+    """
+    Adds two binary numbers using neuron-built adders.
+    Inputs and outputs are LSB-first lists of bits.
+    """
+    result: List[int] = []
+    carry = 0
+    max_len = max(len(a), len(b))
 
-    return sum_bits, carry
+    for i in range(max_len):
+        bit_a = a[i] if i < len(a) else 0
+        bit_b = b[i] if i < len(b) else 0
+        s, carry = full_adder(bit_a, bit_b, carry)
+        result.append(s)
+
+    if carry:
+        result.append(carry)
+
+    return result
+
+
+if __name__ == "__main__":
+    # Example: 6 (110) + 5 (101) = 11 (1011)
+    a = [0, 1, 1]   # 6
+    b = [1, 0, 1]   # 5
+    result = add_binary(a, b)
+    print("Input A (LSB->MSB):", a)
+    print("Input B (LSB->MSB):", b)
+    print("Result (LSB->MSB):", result)
+    print("Decimal result:", int("".join(map(str, reversed(result))), 2))

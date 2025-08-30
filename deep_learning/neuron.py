@@ -5,33 +5,34 @@ from typing import Callable, List
 
 class Neuron:
     def __init__(self, input_size: int, activation: Callable[[float], float],
-                 activation_derivative: Callable[[float], float], lr: float, is_output=False):
-        # Xavier Initialization for weights
-        self.ws = [random.uniform(-1, 1) * math.sqrt(1 / input_size)
-                   for _ in range(input_size)]
-        self.b = random.uniform(-0.01, 0.01)
+                 activation_derivative: Callable[[float], float], lr: float, is_output_neuron=False):
+        self.weights = [random.uniform(-1, 1) * math.sqrt(1 / input_size)
+                        for _ in range(input_size)]
+        self.bias = random.uniform(-0.01, 0.01)
         self.activation = activation
         self.activation_derivative = activation_derivative
-        self.lr = lr
-        self.last_input = []
+        self.learning_rate = lr
+        self.last_features = []
         self.last_output = 0
-        self.is_output = is_output
+        self.is_output_neuron = is_output_neuron
 
-    def forward(self, xs: List[float]) -> float:
-        """Calculate output for a given input."""
-        self.last_input = xs
-        s = sum(x * w for x, w in zip(xs, self.ws)) + self.b
-        self.last_output = self.activation(s)
+    def forward(self, features: List[float]) -> float:
+        self.last_features = features
+        self.last_output = self.activation(
+            sum(feature * weight for feature, weight in zip(features, self.weights)) + self.bias
+        )
         return self.last_output
 
-    def backward(self, delta: float):
-        if self.is_output:
-            grad = delta   # delta = y_pred - y_true
-        else:
-            grad = delta * self.activation_derivative(self.last_output)
+    def backward(self, error_delta: float):
+        # Compute gradient
+        error_gradiant = error_delta if self.is_output_neuron else error_delta * self.activation_derivative(self.last_output)
 
-        for i in range(len(self.ws)):
-            self.ws[i] -= self.lr * grad * self.last_input[i]
-        self.b -= self.lr * grad
+        # Update weights using gradient descent
+        self.weights = [
+            weight - self.learning_rate * error_gradiant * feature
+            for weight, feature in zip(self.weights, self.last_features)
+        ]
+        self.bias -= self.learning_rate * error_gradiant
 
-        return [grad * w for w in self.ws]
+        # Return propagated error for previous layer
+        return [error_gradiant * w for w in self.weights]

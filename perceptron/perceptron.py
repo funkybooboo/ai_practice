@@ -1,25 +1,29 @@
+import math
 from collections.abc import Callable
 from typing import List
 import random
 
 
 class Perceptron:
-    def __init__(self, input_size: int, activation: Callable[[float], float], lr: float) -> None:
-        self.ws: List[float] = [random.random() for _ in range(input_size)]
-        self.b: float = random.random()
+    def __init__(self, input_size: int, activation: Callable[[float], float], learning_rate: float) -> None:
+        self.weights = [random.uniform(-1, 1) * math.sqrt(1 / input_size)
+                        for _ in range(input_size)]
+        self.bias = random.uniform(-0.01, 0.01)
         self.activation: Callable[[float], float] = activation
-        self.lr: float = lr
+        self.learning_rate: float = learning_rate
 
-    def predict(self, xs: List[float]) -> float:
-        """Compute the output of the deep_learning for given inputs."""
-        s = sum(x * w for x, w in zip(xs, self.ws)) + self.b
-        return self.activation(s)
+    def predict(self, features: List[float]) -> float:
+        return self.activation(
+            sum(feature * weight for feature, weight in zip(features, self.weights)) + self.bias
+        )
 
-    def fit(self, xss: List[List[float]], ys: List[float], epochs: int) -> None:
-        """Train the deep_learning using simple deep_learning learning rule."""
+    def fit(self, features_table: List[List[float]], labels: List[float], epochs: int) -> None:
         for _ in range(epochs):
-            for xs, y in zip(xss, ys):
-                pred = self.predict(xs)
-                error = y - pred
-                self.ws = [w + self.lr * error * x for w, x in zip(self.ws, xs)]
-                self.b += self.lr * error
+            for features, label in zip(features_table, labels):
+                prediction = self.predict(features)
+                error_delta = label - prediction
+                self.weights = [
+                    weight + self.learning_rate * error_delta * feature
+                    for weight, feature in zip(self.weights, features)
+               ]
+                self.bias += self.learning_rate * error_delta
