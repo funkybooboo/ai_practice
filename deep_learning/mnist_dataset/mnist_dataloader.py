@@ -6,6 +6,9 @@ from os.path import join
 from typing import List, Tuple
 
 
+# download dataset from here https://www.kaggle.com/datasets/hojjatk/mnist-dataset
+
+
 class MnistDataloader:
     def __init__(
         self,
