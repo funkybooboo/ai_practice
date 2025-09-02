@@ -1,4 +1,4 @@
-def sigmoid_derivative(y):
+def sigmoid_derivative(y: float) -> float:
     return y * (1 - y)
 
 def relu_derivative(y: float) -> float:
