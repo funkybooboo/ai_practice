@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from mcculloch_and_pitts.gates import XOR, AND, OR
+from basics.historical.perceptron.curcits.gates import XOR, AND, OR
 
 
 def half_adder(x: int, y: int) -> Tuple[int, int]:

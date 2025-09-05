@@ -1,6 +1,6 @@
 from typing import List
 
-from mcculloch_and_pitts.gates import OR, AND, NOT
+from basics.historical.perceptron.curcits.gates import OR, AND, NOT
 
 
 class LatchMemory:

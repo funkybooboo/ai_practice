@@ -3,21 +3,21 @@ from os.path import join
 import random
 from typing import List, Optional
 
-from deep_learning.activation_derivatives import relu_derivative
-from deep_learning.activations import relu
-from deep_learning.flatteners import flatten
-from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
-from deep_learning.neural_network import NeuralNetwork
+from basics.supervised_learning.classification.no_numpy.activation_derivatives import relu_derivative
+from basics.supervised_learning.classification.no_numpy.activations import relu
+from basics.supervised_learning.classification.no_numpy.flatteners import flatten
+from basics.supervised_learning.classification.no_numpy.mnist_dataset.mnist_dataloader import MnistDataloader
+from basics.supervised_learning.classification.no_numpy.neural_network import NeuralNetwork
 
 import matplotlib.pyplot as plt
 
 INPUT_PATH: str = './archive'
-TRAIN_SIZE: Optional[int] = None
-TEST_SIZE: Optional[int] = None
-NN_HIDDEN_SIZES: List[int] = [16, 16]
-BATCH_SIZE: int = 25
+TRAIN_SIZE: Optional[int] = 5000
+TEST_SIZE: Optional[int] = 1000
+NN_HIDDEN_SIZES: List[int] = [20, 20]
+BATCH_SIZE: int = 30
 LEARNING_RATE: float = 0.001
-EPOCHS: int = 10
+EPOCHS: int = 20
 
 def main() -> None:
     training_images_filepath: str = join(INPUT_PATH, 'train-images-idx3-ubyte/train-images-idx3-ubyte')

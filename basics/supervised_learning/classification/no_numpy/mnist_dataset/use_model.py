@@ -4,9 +4,9 @@ from os.path import join
 from typing import List, Optional
 import matplotlib.pyplot as plt
 
-from deep_learning.flatteners import flatten
-from deep_learning.mnist_dataset.mnist_dataloader import MnistDataloader
-from deep_learning.neural_network import NeuralNetwork
+from basics.supervised_learning.classification.no_numpy.flatteners import flatten
+from basics.supervised_learning.classification.no_numpy.mnist_dataset.mnist_dataloader import MnistDataloader
+from basics.supervised_learning.classification.no_numpy.neural_network import NeuralNetwork
 
 INPUT_PATH: str = './archive'
 MODEL_PATH: Optional[str] = None

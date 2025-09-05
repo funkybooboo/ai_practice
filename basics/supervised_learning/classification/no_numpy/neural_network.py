@@ -3,7 +3,7 @@ import random
 from typing import List, Callable, Tuple, Generator
 import pickle
 
-from deep_learning.neuron import Neuron
+from basics.supervised_learning.classification.no_numpy.neuron import Neuron
 
 
 class NeuralNetwork:
@@ -23,8 +23,7 @@ class NeuralNetwork:
         sizes: List[int] = [input_size] + hidden_sizes + [output_size]
         for i in range(1, len(sizes)):
             last_size = sizes[i - 1]
-            is_output_neuron = (i == len(sizes) - 1)
-            layer: List[Neuron] = [Neuron(last_size, activation, activation_derivative, learning_rate, is_output_neuron=is_output_neuron)
+            layer: List[Neuron] = [Neuron(last_size, activation, activation_derivative, learning_rate)
                      for _ in range(sizes[i])]
             self.layers.append(layer)
 
@@ -106,13 +105,11 @@ class NeuralNetwork:
     def _log_epoch_stats(self, epoch: int, epochs: int, total_loss: float, processed_count: int,
                          features_table: List[List[float]], labels: List[int]):
         """Log the epoch stats including loss and accuracy"""
-        print(f"Epoch {epoch + 1}/{epochs}")
         average_loss = total_loss / processed_count
-        print(f"\tAverage Loss: {average_loss:.2f}")
 
         predictions = self.predict(features_table)
         accuracy = sum(p == y for p, y in zip(predictions, labels)) / len(labels) * 100
-        print(f"\tAccuracy: {accuracy:.2f}%")
+        print(f"Epoch {epoch + 1}/{epochs} - Loss: {average_loss:.2f} - Acc: {accuracy:.2f}%")
 
     def save(self, filename: str) -> None:
         """Save the neural network to a file using pickle"""

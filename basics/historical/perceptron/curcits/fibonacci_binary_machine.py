@@ -1,7 +1,7 @@
 from typing import List
 
-from perceptron.curcits.adders import add_binary
-from perceptron.curcits.memory import RegisterMemory
+from basics.historical.perceptron.curcits.adders import add_binary
+from basics.historical.perceptron.curcits.memory import RegisterMemory
 
 
 class FibonacciBinaryMachine:

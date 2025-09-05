@@ -1,11 +1,11 @@
 from typing import List, Callable
 
-from perceptron.activations import (
+from basics.historical.perceptron.activations import (
     step, sigmoid, leaky_relu, relu, tanh,
     softplus, elu, gelu, selu
 )
-from perceptron.flatteners import flatten
-from perceptron.perceptron import Perceptron
+from basics.historical.perceptron.flatteners import flatten
+from basics.historical.perceptron.perceptron import Perceptron
 
 
 def read_letter_file(file_path: str) -> List[List[float]]:

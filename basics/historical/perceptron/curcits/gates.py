@@ -1,18 +1,24 @@
-from mcculloch_and_pitts.neuron import Neuron
-
+from basics.historical.perceptron.activations import step
+from basics.historical.perceptron.perceptron import Perceptron
 
 # ---- Basic gates ----
-def AND(x: int, y: int) -> int:
-    n = Neuron(weights=[1, 1], threshold=2)
-    return n.activate([x, y])
+def AND(x1: int, x2: int) -> int:
+    p = Perceptron(input_size=2, activation=step, learning_rate=0.1)
+    p.weights = [1.0, 1.0]
+    p.bias = -1.5
+    return int(p.predict([x1, x2]))
 
-def OR(x: int, y: int) -> int:
-    n = Neuron(weights=[1, 1], threshold=1)
-    return n.activate([x, y])
+def OR(x1: int, x2: int) -> int:
+    p = Perceptron(input_size=2, activation=step, learning_rate=0.1)
+    p.weights = [1.0, 1.0]
+    p.bias = -0.5
+    return int(p.predict([x1, x2]))
 
 def NOT(x: int) -> int:
-    n = Neuron(weights=[-1], threshold=0)
-    return n.activate([x])
+    p = Perceptron(input_size=1, activation=step, learning_rate=0.1)
+    p.weights = [-1.0]
+    p.bias = 0.5
+    return int(p.predict([x]))
 
 # ---- Derived gates ----
 def XOR(x: int, y: int) -> int:
@@ -33,9 +39,10 @@ def IMPLIES(x: int, y: int) -> int:
     return OR(NOT(x), y)
 
 def BUFFER(x: int) -> int:
-    # Just a passthrough neuron (weight=1, threshold=1)
-    n = Neuron(weights=[1], threshold=1)
-    return n.activate([x])
+    p = Perceptron(input_size=1, activation=step, learning_rate=0.1)
+    p.weights = [1.0]
+    p.bias = 0.0
+    return int(p.predict([x]))
 
 def NIMPLIES(x1: int, x2: int) -> int:
     return AND(x1, NOT(x2))
@@ -45,7 +52,6 @@ def EQUIV(x1: int, x2: int) -> int:
 
 def DIFF(x1: int, x2: int) -> int:
     return AND(x1, NOT(x2))
-
 
 if __name__ == "__main__":
     tests = [(0,0), (0,1), (1,0), (1,1)]

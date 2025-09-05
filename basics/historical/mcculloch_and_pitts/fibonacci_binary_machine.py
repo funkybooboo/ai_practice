@@ -1,7 +1,7 @@
 from typing import List
 
-from mcculloch_and_pitts.adders import add_binary
-from mcculloch_and_pitts.memory import RegisterMemory
+from basics.historical.mcculloch_and_pitts.adders import add_binary
+from basics.historical.mcculloch_and_pitts.memory import RegisterMemory
 
 
 class FibonacciBinaryMachine:
