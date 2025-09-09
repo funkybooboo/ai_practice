@@ -15,9 +15,13 @@ class NeuralNetwork:
         activation_derivative: Callable[[float], float],
         learning_rate: float,
         batch_size: int,
+        loss_fn: Callable[[List[float], int], float],
+        error_delta_fn: Callable[[List[float], int], List[float]],
     ):
         self.features_size: int = input_size
         self.batch_size = batch_size
+        self.loss_fn = loss_fn
+        self.error_delta_fn = error_delta_fn
 
         self.layers: List[List[Neuron]] = []
         sizes: List[int] = [input_size] + hidden_sizes + [output_size]
@@ -47,14 +51,19 @@ class NeuralNetwork:
                 for features, label in zip(features_batch, labels_batch):
                     outputs = self._forward_propagate(features)
 
-                    loss, error_deltas = self._compute_loss_and_error_deltas(outputs, label)
+                    loss = self.loss_fn(outputs, label)
+                    error_deltas = self.error_delta_fn(outputs, label)
 
                     total_loss += loss
                     processed_count += 1
 
                     self._backward_propagate(error_deltas)
 
-            self._log_epoch_stats(epoch, epochs, total_loss, processed_count, features_table, labels)
+            average_loss = total_loss / processed_count
+
+            predictions = self.predict(features_table)
+            accuracy = sum(p == y for p, y in zip(predictions, labels)) / len(labels) * 100
+            print(f"Epoch {epoch + 1}/{epochs} - Loss: {average_loss:.2f} - Acc: {accuracy:.2f}%")
 
     def _forward_propagate(self, features: List[float]) -> List[float]:
         for i, layer in enumerate(self.layers):
@@ -86,30 +95,6 @@ class NeuralNetwork:
         for start_index in range(0, len(features_table), self.batch_size):
             end_index = min(start_index + self.batch_size, len(features_table))
             yield features_table[start_index:end_index], labels[start_index:end_index]
-
-    @staticmethod
-    def _compute_loss_and_error_deltas(outputs: List[float], label: int) -> Tuple[float, List[float]]:
-        """Compute loss and error_deltas for backpropagation"""
-        targets = [0.0] * len(outputs)
-        targets[label] = 1.0
-
-        loss = 0
-        error_deltas = []
-        for output, target in zip(outputs, targets):
-            error_delta = output - target
-            loss += math.pow(error_delta, 2)
-            error_deltas.append(error_delta)
-
-        return loss, error_deltas
-
-    def _log_epoch_stats(self, epoch: int, epochs: int, total_loss: float, processed_count: int,
-                         features_table: List[List[float]], labels: List[int]):
-        """Log the epoch stats including loss and accuracy"""
-        average_loss = total_loss / processed_count
-
-        predictions = self.predict(features_table)
-        accuracy = sum(p == y for p, y in zip(predictions, labels)) / len(labels) * 100
-        print(f"Epoch {epoch + 1}/{epochs} - Loss: {average_loss:.2f} - Acc: {accuracy:.2f}%")
 
     def save(self, filename: str) -> None:
         """Save the neural network to a file using pickle"""

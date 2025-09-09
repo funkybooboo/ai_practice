@@ -6,6 +6,8 @@ from typing import Optional
 
 from basics.supervised_learning.classification.with_numpy.activations import relu
 from basics.supervised_learning.classification.with_numpy.activation_derivatives import relu_derivative
+from basics.supervised_learning.classification.with_numpy.error_deltas import mse_error_delta
+from basics.supervised_learning.classification.with_numpy.loss import mse_loss
 from basics.supervised_learning.classification.with_numpy.mnist_dataset.mnist_dataloader import MnistDataloader
 from basics.supervised_learning.classification.with_numpy.neural_network import NeuralNetwork
 
@@ -70,6 +72,8 @@ def main() -> None:
         activation_derivative=relu_derivative,
         learning_rate=LEARNING_RATE,
         batch_size=BATCH_SIZE,
+        loss_fn=mse_loss,
+        error_delta_fn=mse_error_delta
     )
 
     # Train

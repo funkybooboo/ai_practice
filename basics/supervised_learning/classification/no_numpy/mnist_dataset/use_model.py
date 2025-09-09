@@ -52,7 +52,7 @@ def main() -> None:
     if model_path is None:
         model_path = get_most_recent_model_path('./')
 
-    nn = NeuralNetwork.load(model_path)
+    nn: NeuralNetwork = NeuralNetwork.load(model_path)
 
     # Predict
     predictions: List[int] = nn.predict(test_images_flat)

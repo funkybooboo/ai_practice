@@ -14,9 +14,14 @@ class NeuralNetwork:
         activation: Callable[[np.ndarray], np.ndarray],
         activation_derivative: Callable[[np.ndarray], np.ndarray],
         learning_rate: float,
-        batch_size: int
+        batch_size: int,
+        loss_fn: Callable[[np.ndarray, np.ndarray], float],
+        error_delta_fn: Callable[[np.ndarray, np.ndarray], np.ndarray]
     ) -> None:
-        # Initialize layers
+        self.batch_size: int = batch_size
+        self.loss_fn = loss_fn
+        self.error_delta_fn = error_delta_fn
+
         self.layers: List[Layer] = []
         sizes: List[int] = [input_size] + hidden_sizes + [output_size]
         for i in range(len(sizes) - 1):
@@ -29,7 +34,6 @@ class NeuralNetwork:
                     learning_rate
                 )
             )
-        self.batch_size: int = batch_size
 
     def predict(self, X: np.ndarray) -> np.ndarray:
         # Forward pass and return class predictions
@@ -48,7 +52,9 @@ class NeuralNetwork:
                 X_batch, y_batch = X[start:end], y[start:end]
 
                 outputs: np.ndarray = self._forward_propagate(X_batch)
-                loss, dA = self._compute_loss_and_gradients(outputs, y_batch)
+
+                loss = self.loss_fn(outputs, y)
+                dA = self.error_delta_fn(outputs, y)
                 total_loss += loss * len(X_batch)
 
                 self._backward_propagate(dA)
@@ -67,16 +73,6 @@ class NeuralNetwork:
         # Backpropagate gradients through layers
         for layer in reversed(self.layers):
             dA = layer.backward(dA)
-
-    @staticmethod
-    def _compute_loss_and_gradients(outputs: np.ndarray, y: np.ndarray) -> Tuple[float, np.ndarray]:
-        # Compute MSE loss and gradient
-        batch_size, num_classes = outputs.shape
-        targets: np.ndarray = np.zeros((batch_size, num_classes))
-        targets[np.arange(batch_size), y] = 1.0
-        loss: float = float(np.mean(np.square(outputs - targets)))
-        dA: np.ndarray = 2 * (outputs - targets) / batch_size
-        return loss, dA
 
     def save(self, filename: str) -> None:
         # Save model with pickle
